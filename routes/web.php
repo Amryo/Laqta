@@ -28,10 +28,10 @@ Route::get('/dashboard', function () {
 // Quick search dummy route to display html elements in search dropdown (header search)
 Route::get('/quick-search', 'PagesController@quickSearch')->name('quick-search');
 
-
+Route::view('forgot', 'auth.forgot-password2');
 Route::prefix('admins')->group(function () {
-
-
+    Route::view('info', 'admins.Profile.personal-information');
+    Route::view('dashboard', 'pages.dashboard')->name('dashboard2');
     Route::prefix('applications')->group(function () {
         Route::resource('categories', CategoryController::class);
         Route::resource('projects', ProjectsController::class);

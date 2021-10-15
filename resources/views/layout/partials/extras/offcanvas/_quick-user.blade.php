@@ -24,7 +24,7 @@
             </div>
             <div class="d-flex flex-column">
                 <a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">
-					James Jones
+					{{Auth::user()->first_name}} {{Auth::user()->last_name}}
 				</a>
                 <div class="text-muted mt-1">
                     Application Developer
@@ -35,7 +35,11 @@
                             <span class="navi-icon mr-1">
 								{{ Metronic::getSVG("media/svg/icons/Communication/Mail-notification.svg", "svg-icon-lg svg-icon-primary") }}
 							</span>
-                            <span class="navi-text text-muted text-hover-primary">jm@softplus.com</span>
+                            <span class="navi-text text-muted text-hover-primary">{{Auth::user()->email}}</span>
+							<form method="POST" action="{{ route('logout') }}">
+								@csrf
+								<button type="submit" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</button>
+							<form
                         </span>
                     </a>
                 </div>
