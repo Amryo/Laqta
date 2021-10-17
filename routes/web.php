@@ -4,6 +4,15 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ClientsController;
 use App\Http\Controllers\Admin\ProjectsController;
 use App\Http\Controllers\Admin\RulesController;
+use App\Http\Controllers\Admin\ServicesController;
+use App\Http\Controllers\Admin\SocialsController;
+use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\FrondEndController;
+use App\Http\Controllers\ServicesController as ControllersServicesController;
+use App\Http\Controllers\Website\AboutUs\AboutusController;
+use App\Http\Controllers\Website\AboutUs\TeamController;
+use App\Http\Controllers\Website\ClientsController as WebsiteClientsController;
+use App\Models\Social;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +30,18 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+Route::get('/', function () {
+    $socials = Social::all();
+    return view('front.home.home', [
+        'socials' => $socials
+    ]);
+});
+Route::get('about', [FrondEndController::class, 'Aboutus']);
+Route::get('clients', [FrondEndController::class, 'Clients']);
+
+Route::post('contacts', [ContactsController::class, 'store'])->name('contacts.store');
+Route::get('services', [ControllersServicesController::class, 'index'])->name('services.index');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -35,10 +56,15 @@ Route::prefix('admins')->group(function () {
     Route::prefix('applications')->group(function () {
         Route::resource('categories', CategoryController::class);
         Route::resource('projects', ProjectsController::class);
+        Route::resource('services', ServicesController::class);
+        Route::resource('socials', SocialsController::class);
         Route::resource('rules', RulesController::class);
     });
     Route::prefix('pages')->group(function () {
         Route::resource('clients', ClientsController::class);
+        Route::resource('clients-description', WebsiteClientsController::class);
+        Route::resource('aboutus', AboutusController::class);
+        Route::resource('team', TeamController::class);
     });
 });
 //ddddd

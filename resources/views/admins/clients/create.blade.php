@@ -28,7 +28,7 @@
     <script src="{{ asset('js/pages/widgets.js')}}"></script>
     <script src="{{asset('js/pages/crud/forms/widgets/bootstrap-maxlength.js')}}"></script>
     <script>
-        var avatar2 = new KTImageInput('kt_image_2');
+        var avatar2 = new KTImageInput('kt_image_5');
 
     </script>
     
