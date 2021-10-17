@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\Admin\SocialsController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\ServicesController as ControllersServicesController;
+use App\Http\Controllers\Website\HomeHeadersController;
 use App\Models\Social;
 use Illuminate\Support\Facades\Route;
 
@@ -32,7 +33,7 @@ Route::get('/', function () {
     return view('front.home.home', [
         'socials' => $socials
     ]);
-});
+})->name('index');
 Route::post('contacts', [ContactsController::class, 'store'])->name('contacts.store');
 Route::get('services', [ControllersServicesController::class, 'index'])->name('services.index');
 
@@ -59,6 +60,11 @@ Route::prefix('admins')->group(function () {
         Route::resource('clients', ClientsController::class);
     });
 });
-//ddddd
 
+Route::prefix('home')
+->as('home.')
+->group(function () {
+    // home/header/
+    Route::resource('header', HomeHeadersController::class);
+});
 require __DIR__ . '/auth.php';
