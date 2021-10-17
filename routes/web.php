@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ClientsController;
+use App\Http\Controllers\Admin\ContactsController as AdminContactsController;
 use App\Http\Controllers\Admin\ProjectsController;
 use App\Http\Controllers\Admin\RulesController;
 use App\Http\Controllers\Admin\ServicesController;
@@ -53,6 +54,7 @@ Route::prefix('admins')->group(function () {
         Route::resource('services', ServicesController::class);
         Route::resource('socials', SocialsController::class);
         Route::resource('rules', RulesController::class);
+        Route::resource('contacts', AdminContactsController::class);
     });
     Route::prefix('pages')->group(function () {
         Route::resource('clients', ClientsController::class);
