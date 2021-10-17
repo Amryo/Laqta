@@ -10,6 +10,7 @@ use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\App;
 
 class ContactCreated implements ShouldBroadcast
 {
@@ -40,11 +41,12 @@ class ContactCreated implements ShouldBroadcast
     {
         return [
             'message' => [
-                'title' => $this->contact->full_name . 'Sent New Message',
+                'title' => $this->contact->full_name . ' ' . 'Sent New Message',
                 'name' => $this->contact->full_name,
                 'phone_number' => $this->contact->phone_number,
                 'email' => $this->contact->email,
                 'message' => $this->contact->message,
+                'url' => config('app.url') . '/admins/applications/contacts' . '/' . $this->contact->id
             ],
         ];
     }
