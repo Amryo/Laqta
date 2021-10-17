@@ -55,20 +55,26 @@ class ContactNotification extends Notification
     public function toDatabase($notifiable)
     {
         return [
+            'title' => $this->contact->full_name . ' ' .  ' Sent New Message',
             'name' => $this->contact->full_name,
             'phone_number' => $this->contact->phone_number,
             'email' => $this->contact->email,
             'message' => $this->contact->message,
+            'url' => config('app.url') . '/admins/applications/contacts' . '/' . $this->contact->id
+
         ];
     }
 
     public function toBroadcast($notifiable)
     {
         return new BroadcastMessage([
+            'title' => $this->contact->full_name . ' ' . ' Sent New Message',
             'name' => $this->contact->full_name,
             'phone_number' => $this->contact->phone_number,
             'email' => $this->contact->email,
             'message' => $this->contact->message,
+            'url' => config('app.url') . '/admins/applications/contacts' . '/' . $this->contact->id
+
         ]);
     }
 

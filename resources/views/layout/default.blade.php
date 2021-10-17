@@ -70,9 +70,15 @@ License: You must have a valid license purchased only from themeforest(the above
     <script src="{{ asset($script) }}" type="text/javascript"></script>
     @endforeach
 
+<<<<<<< HEAD
+    </body>
+    <script src="{{asset('js/alert.js')}}"></script>
+</html>
+=======
     {{-- Includable JS --}}
     @yield('scripts')
     <script src="{{ asset('js/app.js')}}"></script>
 </body>
+>>>>>>> bfba380cdcd2519a8ec2e8252726dd3dc0dd72c7
 
 </html>

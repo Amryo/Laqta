@@ -26,6 +26,10 @@
 
     {{ $slot }}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ad34aafd5354dc8ca171b7c4a408fab485916b98
 
     <!-- contactSection -->
 
@@ -685,6 +689,9 @@
         videoTitle: "About Us Video",
     });
     </script>
+
+    <script src="{{ asset('front/assets/js/projects.js') }}"></script>
+
 
 </body>
 

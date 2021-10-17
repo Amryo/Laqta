@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ClientsController;
+use App\Http\Controllers\Admin\ContactsController as AdminContactsController;
 use App\Http\Controllers\Admin\ProjectsController;
 use App\Http\Controllers\Admin\RulesController;
 use App\Http\Controllers\Admin\ServicesController;
@@ -35,10 +36,7 @@ Route::get('/', function () {
     return view('front.home.home', [
         'socials' => $socials
     ]);
-});
-Route::get('about', [FrondEndController::class, 'Aboutus']);
-Route::get('clients', [FrondEndController::class, 'Clients']);
-
+})->name('index');
 Route::post('contacts', [ContactsController::class, 'store'])->name('contacts.store');
 Route::get('services', [ControllersServicesController::class, 'index'])->name('services.index');
 
@@ -59,6 +57,7 @@ Route::prefix('admins')->group(function () {
         Route::resource('services', ServicesController::class);
         Route::resource('socials', SocialsController::class);
         Route::resource('rules', RulesController::class);
+        Route::resource('contacts', AdminContactsController::class);
     });
     Route::prefix('pages')->group(function () {
         Route::resource('clients', ClientsController::class);
@@ -67,6 +66,5 @@ Route::prefix('admins')->group(function () {
         Route::resource('team', TeamController::class);
     });
 });
-//ddddd
 
 require __DIR__ . '/auth.php';
