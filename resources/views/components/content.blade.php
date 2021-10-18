@@ -1,250 +1,338 @@
-<!-- Modal -->
-<div class="modal fade" id="aboutUsVideo" tabindex="-1" aria-labelledby="aboutUsVideoLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content border-0 bg-transparent">
-            <div class="modal-body m-0 p-0 position-relative">
-                <button type="button" class="bg-transparent border-0 position-absolute"
-                    style="right: 55px;top: 12px;padding: 0;z-index: 90;" data-bs-dismiss="modal" aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32.721" height="32.721"
-                        viewBox="0 0 32.721 32.721">
-                        <g id="Group_1360" data-name="Group 1360" transform="translate(0.5 0.5)">
-                            <g id="Group_1358" data-name="Group 1358">
-                                <circle id="Ellipse_377" data-name="Ellipse 377" cx="15.86" cy="15.86" r="15.86"
-                                    fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" />
-                            </g>
-                            <g id="Group_1359" data-name="Group 1359" transform="translate(8.384 15.86) rotate(-45)">
-                                <line id="Line_152" data-name="Line 152" y2="10.574" transform="translate(5.287)"
-                                    fill="none" stroke="#fff" stroke-width="2" />
-                                <line id="Line_153" data-name="Line 153" x1="10.574" transform="translate(0 5.287)"
-                                    fill="none" stroke="#fff" stroke-width="2" />
-                            </g>
-                        </g>
-                    </svg>
-                </button>
+   <!-- Modal -->
+   <div class="modal fade" id="aboutUsVideo" tabindex="-1" aria-labelledby="aboutUsVideoLabel" aria-hidden="true">
+       <div class="modal-dialog">
+           <div class="modal-content border-0 bg-transparent">
+               <div class="modal-body m-0 p-0 position-relative">
+                   <button type="button" class="bg-transparent border-0 position-absolute"
+                       style="right: 55px;top: 12px;padding: 0;z-index: 90;" data-bs-dismiss="modal" aria-label="Close">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="32.721" height="32.721"
+                           viewBox="0 0 32.721 32.721">
+                           <g id="Group_1360" data-name="Group 1360" transform="translate(0.5 0.5)">
+                               <g id="Group_1358" data-name="Group 1358">
+                                   <circle id="Ellipse_377" data-name="Ellipse 377" cx="15.86" cy="15.86" r="15.86"
+                                       fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" />
+                               </g>
+                               <g id="Group_1359" data-name="Group 1359" transform="translate(8.384 15.86) rotate(-45)">
+                                   <line id="Line_152" data-name="Line 152" y2="10.574" transform="translate(5.287)"
+                                       fill="none" stroke="#fff" stroke-width="2" />
+                                   <line id="Line_153" data-name="Line 153" x1="10.574" transform="translate(0 5.287)"
+                                       fill="none" stroke="#fff" stroke-width="2" />
+                               </g>
+                           </g>
+                       </svg>
+                   </button>
 
-                <x-home-front-video2 />
+                   <x-home-front-video2 />
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Header -->
+   <header class="mainHeader position-relative">
+
+       
+
+       <!-- contentLayer -->
+       <x-home-front />
+
+   </header>
+
+   <!-- Content -->
+   <section id="secondSetion" class="contentLayer ourContent pb-3 darkTheme">
+       <x-home-card />
+       
+       <x-home-main1 />
+       <div class="all-our-creative-projects aboutSection pt-0 contactSection position-relative darkTheme mb-5"
+           data-aos="fade-up">
+           <div class="m-auto contactSectionInner">
+               <h4 class="fs-50px text-secondary text-uppercase mb-3">Our Creative projects</h4>
+               <div class="d-flex sectionTitle-top pt-2">
+                   <div class="flex-basis-1-from-3 d-flex gap-2 gap-md-5">
+                       <div class="line-height-20px">
+                           <p class="text-secondary-sm-subtitle fs-15px text-uppercase mb-0">Filter by</p>
+                       </div>
+                   </div>
+                   <div
+                       class="flex-basis-1-from-3 d-md-flex justify-content-between align-items-start ps-4 position-relative border-left-line-41px">
+                       <p class="text-secondary-sm-subtitle fs-15px text-uppercase mb-0">Project type</p>
+                       <div class="d-flex flex-column" data-filter-group>
+                           <button type="button"
+                               class="btn shadow-none text-decoration-none p-0 m-0 text-start text-secondary-sm-subtitle fs-15px text-uppercase buttonsTabs"
+                               data-filter=".branding">BRANDING</button>
+                           <button type="button"
+                               class="btn shadow-none text-decoration-none p-0 m-0 text-start text-secondary-sm-subtitle fs-15px text-uppercase buttonsTabs"
+                               data-filter=".uxui">UI&amp;UX</button>
+                           <button type="button"
+                               class="btn shadow-none text-decoration-none p-0 m-0 text-start text-secondary-sm-subtitle fs-15px text-uppercase buttonsTabs"
+                               data-filter=".campaigns">Campaigns</button>
+                       </div>
+                   </div>
+                   <div
+                       class="flex-basis-1-from-3 d-md-flex justify-content-between align-items-start ps-4 position-relative border-left-line-41px">
+                       <p class="text-secondary-sm-subtitle fs-15px text-uppercase mb-0">Featured</p>
+                       <div class="d-flex flex-column" data-filter-group>
+                           <button type="button"
+                               class="btn shadow-none text-decoration-none p-0 m-0 text-start text-secondary-sm-subtitle fs-15px text-uppercase buttonsTabs"
+                               data-filter=".government">GOVERNMENT</button>
+                           <button type="button"
+                               class="btn shadow-none text-decoration-none p-0 m-0 text-start text-secondary-sm-subtitle fs-15px text-uppercase buttonsTabs"
+                               data-filter=".individual">individual</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   {{-- <section class="containerMixItUpProjects pb-5 contentLayerNoRight darkTheme pb-15">
+    <div class="contactSectionInner90 ms-auto position-relative" data-aos="fade-up">
+        <div class="containerMixItUp row mx-0">
+            <div class="tab-content col-12 col-lg-6 px-lg-0 mb-15-under-md" id="nav-tabContent">
+                <div class="tab-pane fade active show h-100 me-5 position-relative" id="nav-project-1"
+                    role="tabpanel" aria-labelledby="nav-project-1-tab">
+                    <p class="mb-0 text-secondary-sm-title fs-20px ft-Gilroy-bold text-uppercase">CALIBAR</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class=" mb-0 fs-15px text-secondary-sm-title text-uppercase">
+                            <span class="ft-Gilroy-bold">PROJECT</span> number
+                        </p>
+                        <p class=" mb-0 fs-15px text-secondary-sm-title ft-Gilroy-bold">01</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class=" mb-0 fs-15px text-secondary-sm-title text-uppercase">YEAR</p>
+                        <p class=" mb-0 fs-15px text-secondary-sm-title ft-Gilroy-bold">2021</p>
+                    </div>
+                    <p class="mb-0 text-secondary-sm-title fs-20px sectionTitle-top pt-4"><span
+                            class="ft-Gilroy-bold">PROJECT</span> DESCRIPTION</p>
+                    <div class="fs-15px ft-Milliard-Medium text-secondary text-uppercase mt-4 line-height-30px">
+                        LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD
+                        TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS
+                        NOSTRUD EXERCI
+                    </div>
+                    <div class="position-absolute start-0 w-100 sectionTitle-top pt-4" style="bottom: -80px;">
+                        <a href="./project-review.html"
+                            class="btn btn-link hoverBtnContainArrow shadow-none text-decoration-none position-relative">
+                            <span
+                                class="fs-15px pe-4 text-uppercase text-decoration-underline text-decoration-underline-white text-underline-offset-10px text-decoration-thickness-1px whiteColorTheme">Full
+                                projects</span>
+                            <svg class="translateArrow position-absolute d-none d-md-block"
+                                xmlns="http://www.w3.org/2000/svg" width="42.213" height="12.832"
+                                viewBox="0 0 42.213 12.832">
+                                <g id="Group_1532" data-name="Group 1532" transform="translate(19333.83 -5950.084)">
+                                    <g id="Group_1517" data-name="Group 1517"
+                                        transform="translate(-18314.504 5899.745) rotate(180)">
+                                        <path id="Path_4427" class="whiteStrokeTheme" data-name="Path 4427"
+                                            d="M965.24-70.61l-6.062-6.063,6.063-6.063"
+                                            transform="translate(18.642 19.918)" fill="none" stroke="#fff"
+                                            stroke-miterlimit="10" stroke-width="2"></path>
+                                    </g>
+                                    <line id="Line_241" class="whiteStrokeTheme" data-name="Line 241" x1="41.324"
+                                        y1="0.454" transform="translate(-19333.824 5956.046)" fill="none"
+                                        stroke="#fff" stroke-width="2"></line>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade h-100 me-5 position-relative" id="nav-project-2" role="tabpanel"
+                    aria-labelledby="nav-project-2-tab">
+                    <p class="mb-0 text-secondary-sm-title fs-20px ft-Gilroy-bold text-uppercase">laviar PROJECT</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class=" mb-0 fs-15px text-secondary-sm-title text-uppercase">
+                            <span class="ft-Gilroy-bold">PROJECT</span> number
+                        </p>
+                        <p class=" mb-0 fs-15px text-secondary-sm-title ft-Gilroy-bold">02</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class=" mb-0 fs-15px text-secondary-sm-title text-uppercase">YEAR</p>
+                        <p class=" mb-0 fs-15px text-secondary-sm-title ft-Gilroy-bold">2020</p>
+                    </div>
+                    <p class="mb-0 text-secondary-sm-title fs-20px sectionTitle-top pt-4"><span
+                            class="ft-Gilroy-bold">PROJECT</span> DESCRIPTION</p>
+                    <div class="fs-15px ft-Milliard-Medium text-secondary text-uppercase mt-4 line-height-30px">
+                        LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD
+                        TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS
+                        NOSTRUD EXERCI
+                    </div>
+                    <div class="position-absolute start-0 w-100 sectionTitle-top pt-4" style="bottom: -80px;">
+                        <a href="./project-review.html"
+                            class="btn btn-link hoverBtnContainArrow shadow-none text-decoration-none position-relative">
+                            <span
+                                class="fs-15px pe-4 text-uppercase text-decoration-underline text-decoration-underline-white text-underline-offset-10px text-decoration-thickness-1px whiteColorTheme">Full
+                                projects</span>
+                            <svg class="translateArrow position-absolute d-none d-md-block"
+                                xmlns="http://www.w3.org/2000/svg" width="42.213" height="12.832"
+                                viewBox="0 0 42.213 12.832">
+                                <g id="Group_1532" data-name="Group 1532" transform="translate(19333.83 -5950.084)">
+                                    <g id="Group_1517" data-name="Group 1517"
+                                        transform="translate(-18314.504 5899.745) rotate(180)">
+                                        <path id="Path_4427" class="whiteStrokeTheme" data-name="Path 4427"
+                                            d="M965.24-70.61l-6.062-6.063,6.063-6.063"
+                                            transform="translate(18.642 19.918)" fill="none" stroke="#fff"
+                                            stroke-miterlimit="10" stroke-width="2"></path>
+                                    </g>
+                                    <line id="Line_241" class="whiteStrokeTheme" data-name="Line 241" x1="41.324"
+                                        y1="0.454" transform="translate(-19333.824 5956.046)" fill="none"
+                                        stroke="#fff" stroke-width="2"></line>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade h-100 me-5 position-relative" id="nav-project-3" role="tabpanel"
+                    aria-labelledby="nav-project-3-tab">
+                    <p class="mb-0 text-secondary-sm-title fs-20px ft-Gilroy-bold text-uppercase">MAYADIN PROJECT
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class=" mb-0 fs-15px text-secondary-sm-title text-uppercase">
+                            <span class="ft-Gilroy-bold">PROJECT</span> number
+                        </p>
+                        <p class=" mb-0 fs-15px text-secondary-sm-title ft-Gilroy-bold">03</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class=" mb-0 fs-15px text-secondary-sm-title text-uppercase">YEAR</p>
+                        <p class=" mb-0 fs-15px text-secondary-sm-title ft-Gilroy-bold">2019</p>
+                    </div>
+                    <p class="mb-0 text-secondary-sm-title fs-20px sectionTitle-top pt-4"><span
+                            class="ft-Gilroy-bold">PROJECT</span> DESCRIPTION</p>
+                    <div class="fs-15px ft-Milliard-Medium text-secondary text-uppercase mt-4 line-height-30px">
+                        LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD
+                        TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS
+                        NOSTRUD EXERCI
+                    </div>
+                    <div class="position-absolute start-0 w-100 sectionTitle-top pt-4" style="bottom: -80px;">
+                        <a href="./project-review.html"
+                            class="btn btn-link hoverBtnContainArrow shadow-none text-decoration-none position-relative">
+                            <span
+                                class="fs-15px pe-4 text-uppercase text-decoration-underline text-decoration-underline-white text-underline-offset-10px text-decoration-thickness-1px whiteColorTheme">Full
+                                projects</span>
+                            <svg class="translateArrow position-absolute d-none d-md-block"
+                                xmlns="http://www.w3.org/2000/svg" width="42.213" height="12.832"
+                                viewBox="0 0 42.213 12.832">
+                                <g id="Group_1532" data-name="Group 1532" transform="translate(19333.83 -5950.084)">
+                                    <g id="Group_1517" data-name="Group 1517"
+                                        transform="translate(-18314.504 5899.745) rotate(180)">
+                                        <path id="Path_4427" class="whiteStrokeTheme" data-name="Path 4427"
+                                            d="M965.24-70.61l-6.062-6.063,6.063-6.063"
+                                            transform="translate(18.642 19.918)" fill="none" stroke="#fff"
+                                            stroke-miterlimit="10" stroke-width="2"></path>
+                                    </g>
+                                    <line id="Line_241" class="whiteStrokeTheme" data-name="Line 241" x1="41.324"
+                                        y1="0.454" transform="translate(-19333.824 5956.046)" fill="none"
+                                        stroke="#fff" stroke-width="2"></line>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 px-0 nav nav-tabs border-0 fsbanner position-relative overflow-hidden"
+                id="nav-tab" role="tablist">
+                <!-- Start component  -->
+                <div class="border-0 rounded-0 mix branding government position-absolute fsbanner-item active"
+                    id="nav-project-1-tab" data-bs-toggle="tab" data-bs-target="#nav-project-1" role="tab"
+                    aria-controls="nav-project-1" aria-selected="true">
+                    <div class="position-relative w-100 h-100">
+                        <img class="w-100 h-100 position-relative zIndex-10"
+                            src="./assets/imgs/creative-project-hom-page-1.webp" alt="creative-project-hom-page">
+                        <div class="position-absolute w-100 h-100 start-0 top-0 aboutSectionItemGradient zIndex-20">
+                        </div>
+                        <div class="containerMixItUpProjects-content position-absolute zIndex-30 name">
+                            <p class="mb-0 text-white fs-28px ft-Gilroy-ExtraBold text-uppercase detailsForProject">
+                                CALIBAR</p>
+                            <p class="mb-0 text-white text-uppercase fs-15px detailsForProject">This means that
+                                something</p>
+                        </div>
+                        <div
+                            class="position-absolute zIndex-30 fs-15px text-white containerMixItUpProjects-content2">
+                            01/100+
+                        </div>
+                        <div class="containerMixItUpProjects-content3 position-absolute zIndex-30">
+                            <div
+                                class="containerMixItUpProjects-content3Inner d-flex flex-column justify-content-center align-items-center h-100">
+                                <p class="fs-15px text-white text-secondary-sm-title text-end mb-0 ms-4">01</p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div id="scroll-animation-wrapper4" class="scroll-animation-wrapper m-0 p-0">
+                                        <div class="lineBetween elementHeightTopToBottom"></div>
+                                    </div>
+                                </div>
+                                <p
+                                    class="fs-15px text-white text-secondary-sm-title text-uppercase mb-0 rotateText">
+                                    CALIBAR PROJECT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End component  -->
+
+                <div class="border-0 rounded-0 mix branding government position-absolute fsbanner-item"
+                    id="nav-project-2-tab" data-bs-toggle="tab" data-bs-target="#nav-project-2" role="tab"
+                    aria-controls="nav-project-2" aria-selected="false">
+                    <div class="position-relative w-100 h-100">
+                        <img class="w-100 h-100 position-relative zIndex-10"
+                            src="./assets/imgs/creative-project-hom-page-2.webp" alt="creative-project-hom-page">
+                        <div class="position-absolute w-100 h-100 start-0 top-0 aboutSectionItemGradient zIndex-20">
+                        </div>
+                        <div class="containerMixItUpProjects-content position-absolute zIndex-30 name">
+                            <p class="mb-0 text-white fs-28px ft-Gilroy-ExtraBold text-uppercase detailsForProject">
+                                laviar PROJECT</p>
+                            <p class="mb-0 text-white text-uppercase fs-15px detailsForProject">This means that
+                                something</p>
+                        </div>
+                        <div
+                            class="position-absolute zIndex-30 fs-15px text-white containerMixItUpProjects-content2">
+                            02/100+
+                        </div>
+                        <div class="containerMixItUpProjects-content3 position-absolute zIndex-30">
+                            <div
+                                class="containerMixItUpProjects-content3Inner d-flex flex-column justify-content-center align-items-center h-100">
+                                <p class="fs-15px text-white text-secondary-sm-title text-end mb-0 ms-4">02</p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div id="scroll-animation-wrapper5" class="scroll-animation-wrapper m-0 p-0">
+                                        <div class="lineBetween elementHeightTopToBottom"></div>
+                                    </div>
+                                </div>
+                                <p
+                                    class="fs-15px text-white text-secondary-sm-title text-uppercase mb-0 rotateText">
+                                    laviar PROJECT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-0 rounded-0 mix branding government position-absolute fsbanner-item"
+                    id="nav-project-3-tab" data-bs-toggle="tab" data-bs-target="#nav-project-3" role="tab"
+                    aria-controls="nav-project-3" aria-selected="false">
+                    <div class="position-relative w-100 h-100">
+                        <img class="w-100 h-100 position-relative zIndex-10"
+                            src="./assets/imgs/creative-project-hom-page-3.webp" alt="creative-project-hom-page">
+                        <div class="position-absolute w-100 h-100 start-0 top-0 aboutSectionItemGradient zIndex-20">
+                        </div>
+                        <div class="containerMixItUpProjects-content position-absolute zIndex-30 name">
+                            <p class="mb-0 text-white fs-28px ft-Gilroy-ExtraBold text-uppercase detailsForProject">
+                                MAYADIN PROJECT</p>
+                            <p class="mb-0 text-white text-uppercase fs-15px detailsForProject">This means that
+                                something</p>
+                        </div>
+                        <div
+                            class="position-absolute zIndex-30 fs-15px text-white containerMixItUpProjects-content2">
+                            03/100+
+                        </div>
+                        <div class="containerMixItUpProjects-content3 position-absolute zIndex-30">
+                            <div
+                                class="containerMixItUpProjects-content3Inner d-flex flex-column justify-content-center align-items-center h-100">
+                                <p class="fs-15px text-white text-secondary-sm-title text-end mb-0 ms-4">03</p>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div id="scroll-animation-wrapper6" class="scroll-animation-wrapper m-0 p-0">
+                                        <div class="lineBetween elementHeightTopToBottom"></div>
+                                    </div>
+                                </div>
+                                <p
+                                    class="fs-15px text-white text-secondary-sm-title text-uppercase mb-0 rotateText">
+                                    MAYADIN PROJECT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Header -->
-<header class="mainHeader position-relative">
-
-
-
-    <!-- contentLayer -->
-    <x-home-front />
-
-</header>
-
-<!-- Content -->
-<section id="secondSetion" class="contentLayer ourContent pb-3 darkTheme">
-    <div class="d-none d-lg-block contentCard contentCardDesktop contentCardDark m-auto d-lg-flex flex-wrap p-4 mb-5"
-        data-aos="fade-up">
-        <div class="d-flex flex-row justify-content-center align-items-center flex-basis-40">
-            <p class="text-secondary m-0 ft-Gilroy-bold fs-60px">03</p>
-            <div class="ms-3">
-                <p class="d-flex flex-column m-0 line-height-16px">
-                    <span class="text-uppercase text-secondary">Emirati team of</span>
-                    <span class="text-uppercase text-secondary">
-                        youth with a passion
-                        <svg class="mb-1 ms-2" xmlns="http://www.w3.org/2000/svg" width="13.786" height="13.786"
-                            viewBox="0 0 13.786 13.786">
-                            <path class="whiteFillTheme whiteStrokeTheme" id="Path_4443" data-name="Path 4443"
-                                d="M-2071.32-2266.456v1.521h9.546l-9.982,9.982,1.075,1.076,9.982-9.982v9.546h1.521v-12.143Z"
-                                transform="translate(2072.463 2266.956)" fill="#fff" stroke="#fff"
-                                stroke-width="1" />
-                        </svg>
-                    </span>
-                </p>
-            </div>
-        </div>
-        <div
-            class="d-flex flex-row justify-content-center py-3 py-lg-0 justify-content-around align-items-center flex-basis-20">
-            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="21" viewBox="0 0 5 21">
-                <g id="Group_1522" data-name="Group 1522" transform="translate(-9498 -4504)">
-                    <circle class="whiteFillTheme" id="Ellipse_351" data-name="Ellipse 351" cx="2.5" cy="2.5" r="2.5"
-                        transform="translate(9498 4504)" fill="#fff" />
-                    <circle class="whiteFillTheme" id="Ellipse_352" data-name="Ellipse 352" cx="2.5" cy="2.5" r="2.5"
-                        transform="translate(9498 4512)" fill="#fff" />
-                    <circle class="whiteFillTheme" id="Ellipse_353" data-name="Ellipse 353" cx="2.5" cy="2.5" r="2.5"
-                        transform="translate(9498 4520)" fill="#fff" />
-                </g>
-            </svg>
-
-            <img src="{{ asset('front/assets/imgs/radioShape.png') }}" alt="radioShape">
-        </div>
-        <div class="d-flex flex-row justify-content-center justify-content-around align-items-center flex-basis-40">
-            <p class="mb-0 text-uppercase text-secondary">Emirati team of youth with a passion</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5" viewBox="0 0 21 5">
-                <g id="Group_1395" data-name="Group 1395" transform="translate(4525 -9498) rotate(90)">
-                    <circle class="whiteFillTheme" id="Ellipse_351" data-name="Ellipse 351" cx="2.5" cy="2.5" r="2.5"
-                        transform="translate(9498 4504)" fill="#fff" />
-                    <circle class="whiteFillTheme" id="Ellipse_352" data-name="Ellipse 352" cx="2.5" cy="2.5" r="2.5"
-                        transform="translate(9498 4512)" fill="#fff" />
-                    <circle class="whiteFillTheme" id="Ellipse_353" data-name="Ellipse 353" cx="2.5" cy="2.5" r="2.5"
-                        transform="translate(9498 4520)" fill="#fff" />
-                </g>
-            </svg>
-        </div>
-    </div>
-    <div class="d-block d-lg-none contentCard contentCardMobile w-80-just-lg contentCardDark m-auto d-lg-flex flex-wrap p-4 mb-5"
-        data-aos="fade-up">
-        <div class="d-flex flex-row justify-content-around align-items-center flex-basis-40">
-            <p class="text-secondary m-0 ft-Gilroy-bold fs-60px">03</p>
-            <div>
-                <p class="d-flex flex-column m-0 line-height-16px">
-                    <span class="text-uppercase text-secondary">Emirati team of</span>
-                    <span class="text-uppercase text-secondary">
-                        youth with a passion
-                        <svg class="mb-1 ms-2" xmlns="http://www.w3.org/2000/svg" width="13.786" height="13.786"
-                            viewBox="0 0 13.786 13.786">
-                            <path class="whiteFillTheme" id="Path_4443" data-name="Path 4443"
-                                d="M-2071.32-2266.456v1.521h9.546l-9.982,9.982,1.075,1.076,9.982-9.982v9.546h1.521v-12.143Z"
-                                transform="translate(2072.463 2266.956)" fill="#fff" stroke="#fff"
-                                stroke-width="1" />
-                        </svg>
-                    </span>
-                </p>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="10" viewBox="0 0 2 10">
-                <g id="Group_962" data-name="Group 962" transform="translate(-0.008 -0.421)">
-                    <circle class="whiteFillTheme" id="Ellipse_351" data-name="Ellipse 351" cx="1" cy="1" r="1"
-                        transform="translate(0.008 0.421)" fill="#fff" />
-                    <circle class="whiteFillTheme" id="Ellipse_352" data-name="Ellipse 352" cx="1" cy="1" r="1"
-                        transform="translate(0.008 4.421)" fill="#fff" />
-                    <circle class="whiteFillTheme" id="Ellipse_353" data-name="Ellipse 353" cx="1" cy="1" r="1"
-                        transform="translate(0.008 8.421)" fill="#fff" />
-                </g>
-            </svg>
-        </div>
-    </div>
-    <div class="infoSection position-relative" data-aos="fade-up">
-        <div class="d-xxl-flex">
-            <div class="nav flex-column nav-pills tabsNav" id="infoSectionTabs" role="tablist"
-                aria-orientation="vertical">
-                <button
-                    class="nav-link text-uppercase buttonsTabs text-secondary text-start p-0 position-relative active"
-                    id="briefTab-tab" data-bs-toggle="pill" data-bs-target="#briefTab" type="button" role="tab"
-                    aria-controls="briefTab" aria-selected="true">
-                    Brief
-                </button>
-                <button class="nav-link text-uppercase buttonsTabs text-secondary text-start p-0 position-relative"
-                    id="visionTab-tab" data-bs-toggle="pill" data-bs-target="#visionTab" type="button" role="tab"
-                    aria-controls="visionTab" aria-selected="false">
-                    Vision
-                </button>
-                <button class="nav-link text-uppercase buttonsTabs text-secondary text-start p-0 position-relative"
-                    id="missionTab-tab" data-bs-toggle="pill" data-bs-target="#missionTab" type="button" role="tab"
-                    aria-controls="missionTab" aria-selected="false">
-                    Mission
-                </button>
-            </div>
-            <div class="tab-content flex-grow-1" id="infoSectionTabsContent">
-                <div class="tab-pane position-relative fade show active" id="briefTab" role="tabpanel"
-                    aria-labelledby="briefTab-tab">
-                    <div class="upInfo d-flex justify-content-between">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="87.679" height="87.076" viewBox="0 0 87.679 87.076">
-                                <defs>
-                                    <clipPath id="clip-path">
-                                        <rect id="Rectangle_1529" data-name="Rectangle 1529" width="85.52"
-                                            height="85.52" fill="#646464" />
-                                    </clipPath>
-                                    <clipPath id="clip-path-2">
-                                        <rect id="Rectangle_1528" data-name="Rectangle 1528" width="355.262"
-                                            height="222.039" fill="#646464" />
-                                    </clipPath>
-                                </defs>
-                                <g id="Group_1402" data-name="Group 1402" transform="translate(106.978 -53.808)">
-                                    <g id="Group_719" data-name="Group 719" transform="translate(-105.53 54.586)">
-                                        <g id="Group_718" data-name="Group 718" clip-path="url(#clip-path)">
-                                            <g id="Group_717" data-name="Group 717"
-                                                transform="translate(-3.393 -43.45)">
-                                                <g id="Group_716" data-name="Group 716"
-                                                    clip-path="url(#clip-path-2)">
-                                                    <g id="Group_715" data-name="Group 715"
-                                                        transform="translate(-62.375 -16.655)">
-                                                        <g id="Group_677" data-name="Group 677"
-                                                            transform="translate(15.825)">
-                                                            <path id="Path_733" data-name="Path 733"
-                                                                d="M-141.063,21.343h-.03v-.03a1.4,1.4,0,0,1,.486-.992c2.007-1.969,10.436-3.488,25.055-4.518,12.362-.87,29.441-1.41,50.763-1.6,38.609-.351,83.4.49,110.158.992,11.711.22,20.173.38,23.748.361,16.268-.08,32.791.256,48.769.581,20.941.425,42.595.864,63.928.375,20.642-.473,41.658-1.4,64.248-2.832,2.6-.165,5.2-.368,7.958-.583a200.024,200.024,0,0,1,24.647-.908c9.308.428,16.993,2.164,23.492,5.305l.1.048-.109.007c-42.14,3.17-85.072,2.06-126.591.985-21.081-.544-42.613-1.1-64.164-1.1-13.173,0-26.351.208-39.445.753C1.949,21.1-68.754,21.343-141.063,21.343ZM-45.3,14.174c-6.595,0-13.124.026-19.492.084-46.585.425-72.08,2.478-75.776,6.106a1.365,1.365,0,0,0-.468.921c72.3,0,142.99-.243,212.979-3.16,34.515-1.44,69.643-.532,103.613.347,21.063.546,42.494,1.1,64,1.1,20.845,0,41.753-.52,62.478-2.075-6.471-3.107-14.117-4.826-23.37-5.253a200.2,200.2,0,0,0-24.64.908c-2.756.216-5.361.419-7.959.584-22.59,1.431-43.606,2.357-64.249,2.832-21.334.489-42.989.05-63.931-.377-15.978-.324-32.5-.66-48.767-.58-3.577.017-12.038-.142-23.75-.361C23.021,14.831-11.9,14.174-45.3,14.174Z"
-                                                                transform="translate(141.093 -12.074)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_678" data-name="Group 678"
-                                                            transform="translate(15.825 5.972)">
-                                                            <path id="Path_734" data-name="Path 734"
-                                                                d="M217.771,26.284c-20.725,0-41.6-.607-61.9-1.2-20.4-.593-41.37-1.2-62.283-1.2q-6.966,0-13.913.1c-4.981.071-21.65.161-43.722.22-34.485,1-69.313.614-103.64-.027-37.635-.152-72.53-.52-73.385-1.363a.075.075,0,0,1-.024-.053v-.03h.03c16,.217,32.347.554,48.159.881q12.529.258,25.173.5,14.022.058,30.536.082c7.642.01,15.344.016,22.944.016,17.916,0,35.3-.028,50.212-.068q19.534-.565,38.876-1.777c23.127-1.488,46.83-1.225,69.752-.971,14.306.158,29.1.323,43.58.057,21.671-.4,39.731-.81,58.373-2.225,3.734-.283,7.635-.735,11.765-1.213,7.891-.911,16.051-1.855,24.021-1.733,9.067.139,16.39,1.686,22.389,4.727l.085.043-.094.014c-11.957,1.658-24.146,2.881-37.263,3.74-11.689.766-23.856,1.223-37.195,1.4Q224.027,26.286,217.771,26.284ZM93.593,23.828c20.917,0,41.884.608,62.285,1.2,24.378.708,49.587,1.44,74.371,1.117,27.74-.362,52.064-2.038,74.356-5.125-5.975-3.008-13.264-4.539-22.28-4.677-7.966-.122-16.125.82-24.013,1.733-4.131.478-8.032.928-11.767,1.213-18.643,1.413-36.7,1.828-58.375,2.225-14.481.264-29.275.1-43.581-.058-22.922-.253-46.624-.516-69.748.971Q56.607,23.6,38.156,24.139c20.979-.06,36.708-.145,41.522-.215Q86.624,23.824,93.593,23.828Zm-157.206.365c32.229.58,64.876.893,97.232.018-20.814.054-46.086.081-70.815.045C-45.823,24.244-54.763,24.224-63.614,24.193ZM-141,22.793c1.156.655,25.394,1.107,69.232,1.306q-10.61-.2-21.14-.426C-108.7,23.347-125.022,23.01-141,22.793Z"
-                                                                transform="translate(141.093 -16.274)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_679" data-name="Group 679"
-                                                            transform="translate(15.776 10.939)">
-                                                            <path id="Path_735" data-name="Path 735"
-                                                                d="M237.063,33.4c-10.2,0-20.238-1.345-29.994-2.654-6.488-.869-13.2-1.768-19.9-2.27-26.489-1.98-65.89-3.794-103.171-1.184C47.761,29.828,9.951,31.377-28.385,31.9c-36.327.493-74.233.075-112.665-1.241l-.077,0,.06-.05C-122.03,14.872-91.146,20.2-63.9,24.9c10.831,1.866,21.062,3.631,29.729,3.928,31.581,1.083,63.455-.509,94.278-2.048,8.178-.408,16.635-.83,24.974-1.2q20.809-.915,40.953-.915c24.961,0,49.033,1.056,71.938,3.163,17.265,1.588,32.309.637,51.927-3.282q1.271-.254,2.6-.522c16.813-3.393,39.837-8.04,54.954,1.039l.08.047-.092.007c-10.059.782-20.2,2.377-30.009,3.919-11.482,1.805-23.354,3.672-35.165,4.245Q239.657,33.4,237.063,33.4ZM123.937,25.933c23.758,0,46.17,1.207,63.231,2.483,6.711.5,13.419,1.4,19.907,2.27,11.409,1.53,23.205,3.112,35.186,2.53,11.807-.571,23.679-2.438,35.159-4.243,9.779-1.538,19.889-3.129,29.919-3.912-15.1-9-38.059-4.368-54.832-.984q-1.324.267-2.6.522c-19.624,3.921-34.674,4.872-51.943,3.284A837.549,837.549,0,0,0,85.084,25.636c-8.337.367-16.794.789-24.972,1.2-30.825,1.538-62.7,3.13-94.282,2.048-8.671-.3-18.905-2.061-29.739-3.929-27.207-4.691-58.039-10.008-77.06,5.646,27.983.958,55.69,1.439,82.708,1.439q15.092,0,29.875-.2c38.336-.519,76.145-2.07,112.375-4.606C97.261,26.3,110.806,25.933,123.937,25.933Z"
-                                                                transform="translate(141.127 -19.769)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_680" data-name="Group 680"
-                                                            transform="translate(15.813 14.581)">
-                                                            <path id="Path_736" data-name="Path 736"
-                                                                d="M227.1,40.423c-.26,0-.519,0-.778-.006-7.182-.085-14.259-1.393-22.679-3.331-16.224-3.732-31.217-3.3-47.09-2.837-5.807.169-11.813.343-17.928.3-4.923-.033-9.914-.21-14.74-.382-10.343-.37-21.039-.751-31.533.291-23.313,2.316-46.936,2.5-69.78,2.681-13.264.105-26.979.213-40.522.735-13.055.5-26.21-.453-38.932-1.377-7.867-.573-16-1.164-24.041-1.406-9.273-.279-18.678.149-27.771.562-10.6.482-21.558.981-32.368.362h-.04l.014-.038a13.559,13.559,0,0,1,4.548-5.985,23.6,23.6,0,0,1,7.7-3.7c5.629-1.663,12.909-2.317,22.254-2,17.016.579,37.389,4.364,53.76,7.4,11.8,2.192,22,4.086,27.42,4.11,18.993.085,39.125-.488,61.548-1.75C58.341,32.814,80.578,31,97.47,29.55c11.631-.994,23.235-1.488,34.69-1.488A353.218,353.218,0,0,1,209.287,36.2c16.035,3.615,25.308.239,38.14-4.435,3.561-1.3,7.243-2.638,11.465-3.985,9.949-3.173,18.857-4.98,26.476-5.372,11.216-.577,19.539,1.915,24.739,7.408l.07.072-.1-.024a62.784,62.784,0,0,0-13.867-1.788,83.428,83.428,0,0,0-13.7.908c-9.088,1.3-18.2,3.834-27.016,6.282-2.175.6-4.424,1.228-6.63,1.822C240.238,39.414,233.672,40.423,227.1,40.423Zm-55.174-6.531a138.487,138.487,0,0,1,31.73,3.137c8.415,1.936,15.492,3.243,22.666,3.329,6.829.082,13.564-.913,22.523-3.324,2.206-.594,4.455-1.22,6.63-1.822,8.816-2.448,17.933-4.98,27.023-6.283a83.7,83.7,0,0,1,13.712-.91,62.9,62.9,0,0,1,13.782,1.767c-5.193-5.429-13.475-7.89-24.624-7.315-7.614.391-16.517,2.2-26.462,5.369-4.219,1.345-7.9,2.685-11.462,3.983-9.069,3.3-16.363,5.959-25.519,5.959a57.119,57.119,0,0,1-12.653-1.522c-34.1-7.689-72.763-9.989-111.8-6.651-16.894,1.444-39.131,3.262-61.328,4.512C13.723,35.384-6.412,35.957-25.4,35.871c-5.43-.024-15.626-1.918-27.43-4.111-16.369-3.041-36.74-6.825-53.753-7.4-9.338-.318-16.611.335-22.234,2a23.517,23.517,0,0,0-7.682,3.687,13.508,13.508,0,0,0-4.513,5.921c10.8.614,21.738.117,32.321-.364,9.095-.414,18.5-.842,27.775-.563,8.042.243,16.176.834,24.044,1.406,12.72.925,25.873,1.881,38.925,1.377,13.544-.522,27.261-.63,40.525-.734,22.843-.181,46.464-.367,69.775-2.681,10.5-1.043,21.2-.661,31.54-.293,4.826.172,9.817.351,14.738.384,6.117.04,12.12-.134,17.927-.3C161.746,34.04,166.848,33.892,171.927,33.892Z"
-                                                                transform="translate(141.101 -22.331)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_681" data-name="Group 681"
-                                                            transform="translate(15.791 18.147)">
-                                                            <path id="Path_737" data-name="Path 737"
-                                                                d="M222.648,52.465a41.57,41.57,0,0,1-19.529-5.1,99.951,99.951,0,0,0-24.662-8.93,125.515,125.515,0,0,0-25.336-2.842c-16.616-.287-33.624,2.033-52.536,4.862A91.352,91.352,0,0,0,88.738,43.34c-5.153,1.5-10.482,3.051-15.852,3.277-5.2.22-10.836-.77-16.291-1.729A114.4,114.4,0,0,0,45.177,43.27c-4.226-.3-8.583-.694-12.8-1.075C19.245,41.012,5.664,39.785-7.385,40.983c-16.754,1.538-32.057.415-48.258-.773-4.5-.33-9.152-.672-13.878-.958-8.536-.515-18.257.8-28.547,2.195-15.282,2.068-31.085,4.208-42.994-.05l-.016-.006,0-.016a1.53,1.53,0,0,1,.387-1.366c2.63-3.063,17.86-4.37,45.266-3.881,22.588.4,48.014,1.909,63.2,2.809,5.885.35,10.138.6,11.982.655,8.6.249,17.263.161,25.645.075,13.893-.142,28.26-.289,42.47,1.117,13.552,1.339,25.8-.3,38.77-2.036,5.736-.768,11.665-1.561,17.759-2.084,9.858-.846,19.907-1.608,29.625-2.343,6.5-.493,13.227-1,19.828-1.532,17.782-1.426,31.093,3.324,45.188,8.354,6.636,2.368,13.5,4.818,21.137,6.745a24.8,24.8,0,0,0,8.98.476,46.672,46.672,0,0,0,9.681-2.29c6.641-2.246,13.738-5.794,20.6-9.226,9.79-4.9,19.913-9.958,29.156-11.514a26.982,26.982,0,0,1,13.208.679,24.139,24.139,0,0,1,11.468,8.45l.033.04-.051.007c-5.577.768-11.214.171-16.668-.405-5.236-.554-10.649-1.127-15.981-.486-7.514.906-13.8,3.837-20.452,6.94-1.666.778-3.39,1.581-5.129,2.348C243.419,48.028,233.363,52.465,222.648,52.465ZM150.321,35.512c.937,0,1.868.007,2.8.023a125.537,125.537,0,0,1,25.347,2.843,99.989,99.989,0,0,1,24.676,8.936c19.182,9.955,33.6,3.6,51.852-4.458,1.739-.768,3.461-1.571,5.128-2.348,6.658-3.1,12.946-6.039,20.47-6.944,5.339-.643,10.755-.07,15.994.485,5.433.574,11.05,1.17,16.6.414a24.063,24.063,0,0,0-11.408-8.39,26.919,26.919,0,0,0-13.179-.677c-9.234,1.555-19.354,6.616-29.14,11.509-6.865,3.433-13.962,6.981-20.607,9.229a46.635,46.635,0,0,1-9.693,2.293,24.886,24.886,0,0,1-9-.476c-7.641-1.929-14.505-4.38-21.143-6.748-14.087-5.028-27.394-9.776-45.164-8.35-6.6.53-13.324,1.039-19.826,1.531-9.719.736-19.766,1.5-29.626,2.344-6.091.523-12.021,1.316-17.755,2.084-12.973,1.736-25.225,3.375-38.784,2.034-14.207-1.4-28.571-1.258-42.464-1.116-8.381.085-17.05.173-25.647-.077-1.844-.053-6.1-.306-11.984-.654-15.191-.9-40.613-2.407-63.2-2.81-27.387-.488-42.6.812-45.221,3.862a1.472,1.472,0,0,0-.377,1.3c11.9,4.245,27.683,2.107,42.95.04,10.295-1.393,20.018-2.709,28.56-2.193,4.727.286,9.379.627,13.878.957,16.2,1.19,31.5,2.313,48.25.775,13.053-1.2,26.637.027,39.773,1.213,4.213.38,8.57.773,12.8,1.073A114.878,114.878,0,0,1,56.606,44.83c5.452.957,11.088,1.946,16.278,1.729,5.362-.227,10.689-1.777,15.839-3.275A91.291,91.291,0,0,1,100.577,40.4C118.43,37.726,134.587,35.512,150.321,35.512Z"
-                                                                transform="translate(141.116 -24.84)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_682" data-name="Group 682"
-                                                            transform="translate(15.79 22.774)">
-                                                            <path id="Path_738" data-name="Path 738"
-                                                                d="M222.977,60.481a32.046,32.046,0,0,1-11.7-2.169,157.047,157.047,0,0,1-16.741-7.934,112.811,112.811,0,0,0-16.668-7.646A52.247,52.247,0,0,0,158,40.065c-14.574.742-29.7,3.221-44.325,5.621-4.791.785-9.746,1.6-14.547,2.324-23.475,3.555-40.92,3.923-64.366,1.359-16.751-1.832-32.027-3.152-49.359-.719-16.245,2.28-30.421.071-45.429-2.269-6.865-1.069-13.962-2.175-21.394-2.852-6.074-.553-13.881.564-22.148,1.747a167.038,167.038,0,0,1-20.55,2.1c-7.389.107-12.92-1.028-16.912-3.467l-.09-.055h.105a282.657,282.657,0,0,0,28.461-1.9c13.654-1.382,27.773-2.812,42.166-1.079,21.831,2.628,38.275,3.77,57.724,1.832,9.614-.958,20.345-1.467,31.036-1.473h.152c10.623,0,21.279.5,30.825,1.439,19.974,1.97,36.326,1.085,57.247-.382,6.373-.446,12.836-1.22,19.678-2.038,14.829-1.774,30.164-3.608,44.235-1.834,9.934,1.252,18.817,5.594,27.409,9.793,7.942,3.882,16.154,7.9,25.072,9.364a22.431,22.431,0,0,0,8.34-.351,47.669,47.669,0,0,0,9.132-3.061c6.3-2.746,13.135-6.8,19.741-10.728,20.8-12.352,42.3-25.123,55.879-4.229l.127.195-.172-.158a27.682,27.682,0,0,0-12.734-6.98,29.181,29.181,0,0,0-13.267.293c-9.007,2.1-18.14,7.361-27.811,12.936C249.395,52.887,236.223,60.479,222.977,60.481Zm-61.9-20.555a51.769,51.769,0,0,1,16.81,2.749,113.022,113.022,0,0,1,16.677,7.651,156.638,156.638,0,0,0,16.734,7.931C228.44,64.9,245.6,55.005,262.2,45.437c9.675-5.578,18.813-10.846,27.828-12.942a29.233,29.233,0,0,1,13.293-.294,27.636,27.636,0,0,1,12.589,6.838c-13.556-20.572-34.964-7.855-55.672,4.444-6.607,3.925-13.441,7.983-19.747,10.733a47.547,47.547,0,0,1-9.145,3.062,22.449,22.449,0,0,1-8.36.353c-8.927-1.468-17.144-5.484-25.09-9.368-8.586-4.2-17.466-8.538-27.389-9.789-14.065-1.773-29.395.061-44.221,1.835-6.843.819-13.307,1.592-19.681,2.038-20.924,1.467-37.278,2.353-57.257.382-9.544-.941-20.2-1.439-30.819-1.439h-.152c-10.689,0-21.42.513-31.031,1.471-19.455,1.939-35.9.8-57.737-1.832-14.386-1.731-28.5-.3-42.153,1.079a283.146,283.146,0,0,1-28.361,1.9c3.975,2.4,9.467,3.508,16.79,3.4a167.259,167.259,0,0,0,20.543-2.1c8.269-1.183,16.08-2.3,22.162-1.748,7.433.677,14.532,1.784,21.4,2.853,15,2.338,29.174,4.548,45.412,2.269,17.337-2.434,32.617-1.114,49.373.718,23.44,2.564,40.881,2.2,64.35-1.358,4.8-.726,9.755-1.54,14.545-2.326C128.3,43.228,143.421,40.748,158,40Q159.557,39.926,161.073,39.925Z"
-                                                                transform="translate(141.117 -28.094)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_683" data-name="Group 683"
-                                                            transform="translate(16.244 25.474)">
-                                                            <path id="Path_739" data-name="Path 739"
-                                                                d="M224.166,72.16a15.014,15.014,0,0,1-2.23-.162,35.627,35.627,0,0,1-13.719-5.388,113.148,113.148,0,0,1-11.985-9.15c-7.277-6.083-14.8-12.373-24.439-14.7-7.816-1.884-16.945-1.892-27.9-.026-1.571.367-3.139.743-4.7,1.117-4.252,1.018-8.369,2-12.36,2.788-4.07,1.116-8.094,2.31-12.062,3.487-3.029.9-5.892,1.75-8.7,2.539a142.342,142.342,0,0,1-34.71,4.958c-11.483.341-23.123-.317-34.378-.951C19.172,55.67.746,54.631-17.9,57.444a97.4,97.4,0,0,1-24.991.684,126.088,126.088,0,0,1-24.388-5.319c-17-5.257-31.821-4.475-47.518-3.649a257.159,257.159,0,0,1-25.76.466l-.242-.011.237-.047a259.8,259.8,0,0,1,35.628-4.86A155.459,155.459,0,0,1-69.08,46.421c4.61.792,9.158,1.95,13.554,3.072,7.285,1.858,14.82,3.78,22.681,4.009,7.206.21,14.3-1.149,21.155-2.464a128.535,128.535,0,0,1,15.9-2.361c11.544-.734,23.394.628,34.855,1.945,6.542.752,13.306,1.53,19.919,1.9,14.3.81,28.5-.958,42.241-2.667,5.419-.674,11.021-1.37,16.581-1.906,2.931-.281,5.936-.765,9.015-1.369,5.467-1.5,11.013-2.852,16.609-3.827l.453-.078c13.387-3.132,26.958-5.656,38.829-1.582,6.674,2.29,12.545,6.411,18.223,10.4a99.877,99.877,0,0,0,13.293,8.325,35.172,35.172,0,0,0,15.451,3.83h.068c7.875,0,19.181-7.42,31.146-15.276,7.952-5.218,16.173-10.616,23.927-14.2A46.3,46.3,0,0,1,296,30.4a19.3,19.3,0,0,1,9.863.479,15.574,15.574,0,0,1,6.789,4.745,29.047,29.047,0,0,1,5.113,9.622l-.055.023a26.911,26.911,0,0,0-5.86-8.113,16.248,16.248,0,0,0-6.994-3.778c-12.4-3.08-28.652,8.6-44.369,19.894-7.3,5.25-14.2,10.208-20.759,13.8a48.313,48.313,0,0,1-9.415,4.1A21.76,21.76,0,0,1,224.166,72.16Zm-65.21-30.874a54.619,54.619,0,0,1,12.851,1.422c9.651,2.326,17.181,8.62,24.462,14.707a113.152,113.152,0,0,0,11.981,9.146,35.524,35.524,0,0,0,13.7,5.378,19.232,19.232,0,0,0,8.352-.822,48.4,48.4,0,0,0,9.4-4.1c6.552-3.589,13.449-8.546,20.752-13.793,15.728-11.3,31.99-22.993,44.417-19.9a16.3,16.3,0,0,1,7.02,3.791,26.574,26.574,0,0,1,5.679,7.743,28.589,28.589,0,0,0-4.961-9.193,15.525,15.525,0,0,0-6.764-4.727,19.249,19.249,0,0,0-9.834-.478,46.242,46.242,0,0,0-11.159,3.761c-7.75,3.587-15.971,8.983-23.92,14.2-11.974,7.86-23.285,15.284-31.179,15.284h-.068A35.25,35.25,0,0,1,214.2,59.872a99.954,99.954,0,0,1-13.3-8.33c-5.673-3.983-11.541-8.1-18.207-10.389-11.59-3.977-24.81-1.655-37.9,1.375A88.474,88.474,0,0,1,158.956,41.285Zm-256.814,7.22a100.48,100.48,0,0,1,30.6,4.248,126.2,126.2,0,0,0,24.377,5.317,97.352,97.352,0,0,0,24.976-.684c18.652-2.815,37.081-1.776,54.9-.769,11.256.635,22.894,1.292,34.374.952a142.3,142.3,0,0,0,34.7-4.957c2.8-.789,5.665-1.639,8.7-2.539,3.729-1.106,7.509-2.229,11.33-3.285-2.822.537-5.578.965-8.275,1.225-5.558.535-11.16,1.231-16.578,1.906C87.5,51.628,73.288,53.4,58.983,52.585c-6.614-.374-13.38-1.151-19.923-1.9C27.6,49.364,15.756,48,4.217,48.737a128.42,128.42,0,0,0-15.9,2.36c-6.86,1.315-13.955,2.677-21.17,2.465-7.867-.23-15.4-2.152-22.692-4.012-4.4-1.12-8.943-2.28-13.55-3.071a155.414,155.414,0,0,0-35.838-1.714,259.307,259.307,0,0,0-35.381,4.812c8.993.394,17.388-.048,25.509-.476C-109.086,48.8-103.488,48.505-97.858,48.505Zm240.744-5.591c-5.125.917-10.208,2.145-15.225,3.5,3.727-.753,7.565-1.673,11.52-2.621C140.413,43.5,141.65,43.206,142.887,42.914Z"
-                                                                transform="translate(140.798 -29.994)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_684" data-name="Group 684"
-                                                            transform="translate(17 30.401)">
-                                                            <path id="Path_740" data-name="Path 740"
-                                                                d="M222.947,77.292a31.72,31.72,0,0,1-6.765-.741c-10.66-2.319-18.307-9.836-25.7-17.107a112.251,112.251,0,0,0-10.4-9.423,31.927,31.927,0,0,0-11.789-6c-5.629-1.4-12.49-.822-20.973,1.766-7.469,2.279-15.125,5.747-22.53,9.1-6.981,3.161-13.573,6.15-19.276,7.787A146.74,146.74,0,0,1,71.3,67.861a148.762,148.762,0,0,1-34.5-2.485,75.088,75.088,0,0,1-12.1-3.943C19.715,59.5,14.571,57.5,9.438,57.062c-6.023-.51-12.448,1.5-18.663,3.451-2.421.759-4.708,1.476-6.933,2.033-11.948,3-21.724,3.432-31.7,1.413-9.256-1.874-17.866-5.653-28.766-10.438q-1.527-.67-3.107-1.362c-10.234-4.475-20.814-1.476-31.048,1.424-5.318,1.507-10.34,2.931-15.276,3.351a27.159,27.159,0,0,1-7.251-.273,20.464,20.464,0,0,1-6.9-2.58l-.064-.038.073-.016c12.8-2.908,24.347-5.4,36.072-6.413a110.715,110.715,0,0,1,18.014-.183,87.46,87.46,0,0,1,18.2,3.278c10.579,3.1,18.727,5.378,27.261,6.525a85.413,85.413,0,0,0,28.311-.968,157.271,157.271,0,0,1,29.41-2.549c9.836-.027,19.872.577,29.581,1.16,9.811.59,19.96,1.2,29.97,1.168a161.849,161.849,0,0,0,30.088-2.614c5.277-1.011,11.025-2.483,17.112-4.043,7.153-1.832,14.549-3.727,21.779-5.017,8.2-1.461,14.929-1.9,20.581-1.332a38.275,38.275,0,0,1,13.677,4.327,127.194,127.194,0,0,1,12.667,7.824c8.448,5.683,17.185,11.56,27.7,12.781A37.317,37.317,0,0,0,231.72,67.6a39.5,39.5,0,0,0,9.949-3.373c6.246-3.039,11.746-7.365,17.567-11.944a129.071,129.071,0,0,1,15.664-11.1,63.142,63.142,0,0,1,17.435-6.9,33.736,33.736,0,0,1,8.741-.8,19.044,19.044,0,0,1,7.692,1.925c5.2,2.658,8.268,7.952,9.113,15.738l.027.246-.084-.233c-2.5-6.939-6.575-11.341-12.1-13.087-4.812-1.522-10.706-1.042-17.516,1.429a74.948,74.948,0,0,0-16.734,9.005c-4.076,2.86-8,6.205-12.16,9.746C248.311,67.64,236.979,77.29,222.947,77.292ZM161.859,43.219a26.653,26.653,0,0,1,6.448.742,32.026,32.026,0,0,1,11.812,6.013,112.185,112.185,0,0,1,10.4,9.429c7.389,7.264,15.03,14.775,25.673,17.09,17.23,3.747,30.374-7.447,43.085-18.274,4.158-3.541,8.087-6.887,12.164-9.749a74.942,74.942,0,0,1,16.747-9.013c6.823-2.475,12.73-2.955,17.556-1.43,5.479,1.731,9.531,6.069,12.049,12.892-.881-7.631-3.926-12.827-9.052-15.446a18.973,18.973,0,0,0-7.669-1.918,33.626,33.626,0,0,0-8.727.8A63.141,63.141,0,0,0,274.93,41.24,129,129,0,0,0,259.274,52.33c-5.824,4.582-11.327,8.909-17.579,11.951a39.535,39.535,0,0,1-9.964,3.379,37.436,37.436,0,0,1-11.51.372c-10.528-1.223-19.27-7.1-27.726-12.791a127.133,127.133,0,0,0-12.66-7.821A38.262,38.262,0,0,0,166.18,43.1c-5.646-.564-12.373-.128-20.565,1.333-7.227,1.288-14.623,3.183-21.775,5.015-6.087,1.559-11.837,3.032-17.115,4.043-20.1,3.848-40.421,2.627-60.074,1.447-9.708-.583-19.747-1.186-29.577-1.16a157.163,157.163,0,0,0-29.4,2.547,85.533,85.533,0,0,1-28.331.969c-8.538-1.149-16.687-3.43-27.268-6.528a87.367,87.367,0,0,0-18.189-3.275,110.611,110.611,0,0,0-18.005.183c-11.7,1.011-23.224,3.493-35.991,6.394a20.432,20.432,0,0,0,6.815,2.535,27.041,27.041,0,0,0,7.236.272c4.928-.418,9.949-1.841,15.264-3.348,10.242-2.9,20.834-5.905,31.088-1.423q1.582.693,3.106,1.363C-65.7,58.25-57.093,62.029-47.845,63.9c9.965,2.016,19.732,1.581,31.67-1.412,2.225-.559,4.511-1.274,6.93-2.033C-3.024,58.508,3.409,56.492,9.443,57c5.14.435,10.289,2.439,15.269,4.375a75.058,75.058,0,0,0,12.094,3.941A148.731,148.731,0,0,0,71.3,67.8a146.682,146.682,0,0,0,34.2-5.183c5.7-1.638,12.291-4.623,19.268-7.784,7.408-3.356,15.065-6.826,22.537-9.1A50.491,50.491,0,0,1,161.859,43.219Z"
-                                                                transform="translate(140.266 -33.459)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_685" data-name="Group 685"
-                                                            transform="translate(18.207 35.487)">
-                                                            <path id="Path_741" data-name="Path 741"
-                                                                d="M219.026,81.392l-.217,0a36.716,36.716,0,0,1-17.891-5.214c-5.245-3.015-10.025-7.047-14.646-10.944-6.9-5.823-14.042-11.843-22.793-14.476-5.545-1.667-12.488-1.336-21.222,1.014-7.641,2.056-15.381,5.265-22.865,8.37-5.112,2.121-9.942,4.124-14.171,5.5C84.647,72.308,55.237,73.158,33.7,67.7c-3.47-.879-6.614-1.773-9.655-2.636C17.488,63.2,11.825,61.594,5.817,60.977a53.205,53.205,0,0,0-20.11,1.911c-2.735.753-5.449,1.629-8.074,2.476-8.371,2.7-16.281,5.254-25.3,4.354-6.715-.668-12.8-3.336-18.678-5.915a99.987,99.987,0,0,0-11.7-4.553,102.768,102.768,0,0,0-16.407-3.515,71.852,71.852,0,0,0-16.756-.21,45.6,45.6,0,0,0-8.455,2.267c-6.906,2.29-14.733,4.886-19.714.4l-.037-.033.046-.017c12.225-4.621,23.366-6.749,34.054-6.5a74.351,74.351,0,0,1,33,8.788,59.024,59.024,0,0,0,15.074,5.528,50.742,50.742,0,0,0,14.07.934c9.544-.645,19.316-3.682,29.66-6.9,15.336-4.765,25.9-2.125,38.128.934a157.759,157.759,0,0,0,18.857,3.855c11.223,1.449,23.215,2.759,34.88,2.537,12.949-.246,24.047-2.343,33.932-6.408,3.574-1.471,7.213-3.147,10.73-4.769,8.073-3.72,16.42-7.568,24.85-9.347a43.317,43.317,0,0,1,12.811-.9,37.512,37.512,0,0,1,13.2,3.663c5.919,2.843,11.5,7.267,16.9,11.544,5.359,4.245,10.9,8.634,16.838,11.56a34.837,34.837,0,0,0,9.317,3.159,29.094,29.094,0,0,0,10.366-.007c6.393-1.13,16.857-8.32,27.935-15.933,9.388-6.451,19.1-13.122,28.233-17.647,10.444-5.173,18.177-6.469,23.642-3.965a13.768,13.768,0,0,1,6.313,6.225,34.443,34.443,0,0,1,3.4,12.5L316.77,57a30.843,30.843,0,0,0-4.051-11.041A14.016,14.016,0,0,0,306.3,40.47c-2.951-1.207-6.56-1.385-10.726-.529a52.939,52.939,0,0,0-12.845,4.795c-9.068,4.546-18.884,11.331-28.377,17.891C240.4,72.274,227.209,81.39,219.026,81.392ZM155.8,49.653a26.594,26.594,0,0,1,7.7,1.045c8.764,2.636,15.906,8.661,22.814,14.487,4.619,3.9,9.4,7.926,14.638,10.939a36.662,36.662,0,0,0,17.863,5.206l.216,0c8.164,0,21.347-9.112,35.3-18.753,9.494-6.562,19.312-13.348,28.382-17.9a52.987,52.987,0,0,1,12.861-4.8c4.176-.857,7.8-.678,10.76.533a14.062,14.062,0,0,1,6.44,5.514,30.058,30.058,0,0,1,3.919,10.354,33.471,33.471,0,0,0-3.315-11.759,13.7,13.7,0,0,0-6.286-6.2c-5.446-2.5-13.162-1.2-23.59,3.963-9.132,4.523-18.838,11.193-28.226,17.643-5.679,3.9-11.042,7.588-15.816,10.461-5.356,3.221-9.214,4.964-12.141,5.481a29.14,29.14,0,0,1-10.386.007,34.871,34.871,0,0,1-9.332-3.164c-5.943-2.928-11.487-7.319-16.85-11.567-5.4-4.275-10.98-8.7-16.894-11.537a37.436,37.436,0,0,0-13.185-3.656,43.193,43.193,0,0,0-12.792.9c-8.424,1.777-16.768,5.622-24.837,9.342-3.518,1.622-7.157,3.3-10.733,4.769-9.892,4.07-21,6.168-33.953,6.414-11.669.22-23.664-1.089-34.889-2.537A157.75,157.75,0,0,1,24.6,60.986c-12.222-3.056-22.777-5.695-38.1-.934-10.347,3.216-20.122,6.253-29.675,6.9a50.859,50.859,0,0,1-14.086-.935,59.083,59.083,0,0,1-15.088-5.534A74.3,74.3,0,0,0-105.317,51.7c-10.671-.245-21.788,1.875-33.988,6.482,4.957,4.414,12.747,1.831,19.62-.449a45.628,45.628,0,0,1,8.468-2.269,71.959,71.959,0,0,1,16.768.209,102.9,102.9,0,0,1,16.417,3.518,100.265,100.265,0,0,1,11.708,4.556c5.877,2.577,11.954,5.243,18.659,5.911,9.01.9,16.912-1.652,25.279-4.351,2.624-.847,5.339-1.723,8.076-2.478A53.264,53.264,0,0,1,5.824,60.919c6.012.617,11.678,2.226,18.237,4.09,3.041.863,6.185,1.756,9.654,2.636,21.526,5.454,50.924,4.6,71.486-2.067,4.228-1.372,9.057-3.373,14.167-5.494,7.138-2.96,15.228-6.316,22.873-8.371A52.787,52.787,0,0,1,155.8,49.653Z"
-                                                                transform="translate(139.417 -37.037)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_686" data-name="Group 686"
-                                                            transform="translate(18.796 42.684)">
-                                                            <path id="Path_742" data-name="Path 742"
-                                                                d="M219,85.239a35.217,35.217,0,0,1-5.831-.5,51.118,51.118,0,0,1-16.011-5.749,72.9,72.9,0,0,1-13.849-9.959,62.718,62.718,0,0,1-6.336-7.106,65.554,65.554,0,0,0-6.273-7.072,36,36,0,0,0-11.917-4.114,34.716,34.716,0,0,0-9.925.173c-7.32,2.071-15.158,6.187-22.837,10.219-8.428,4.425-16.39,8.607-23.457,10.087-18.885,3.958-39.549,3.925-56.691-.092q-2-.467-3.989-.94c-9.827-2.326-19.108-4.522-28.651-5.616a96.184,96.184,0,0,0-14.382-.64,74.377,74.377,0,0,0-14.622,1.918c-4.546,1.068-9.288,2.52-14.308,4.058C-39.1,72.669-48.421,75.523-57.6,76.431a48.318,48.318,0,0,1-13.513-.382,34.735,34.735,0,0,1-12.649-4.933,49.771,49.771,0,0,1-8.252-7.041,38.329,38.329,0,0,0-7.564-6.343,18.839,18.839,0,0,0-10.7-2.432c-3.177.136-6.967,1.9-10.98,3.778-6.42,3-13.057,6.091-17.7,2.609l-.043-.033.05-.018c11.843-4.5,21.617-7.5,30.827-7.538a41.1,41.1,0,0,1,13.752,2.3,61.168,61.168,0,0,1,14.591,7.646,42.307,42.307,0,0,0,13.81,6.307A47.879,47.879,0,0,0-51.86,71.645c9.5-.439,19.351-3.17,28.88-5.81,3.551-.985,7.221-2,10.842-2.893,14.276-3.517,27.056-1.306,40.588,1.032,3.506.607,7.129,1.234,10.841,1.771a206.452,206.452,0,0,0,31.248,2.087,214.274,214.274,0,0,0,31.517-2.6c7.1-1.122,14.993-4.115,22.621-7.011,8.1-3.073,16.386-6.219,24.168-7.366,4.678-1.323,9.148-1.812,13.23-.914a18.659,18.659,0,0,1,8.66,4.865q.857.458,1.73.965a130.985,130.985,0,0,1,12.63,8.784c9.132,6.889,18.575,14.014,30.454,15.067,15.785,1.4,28.688-8.388,41.166-17.853,5.8-4.4,11.789-8.941,17.876-12.154a70.076,70.076,0,0,1,18.133-6.792c6.754-1.348,12.109-.8,15.917,1.621,4.772,3.034,6.981,8.98,6.568,17.671l-.009.175-.05-.169a31.711,31.711,0,0,0-5.555-11.242,17.384,17.384,0,0,0-7.726-5.518c-4.791-1.677-10.673-1.285-17.485,1.166a82.329,82.329,0,0,0-18.754,10.238,142.812,142.812,0,0,0-13,10.745c-5.813,5.2-11.3,10.119-17.614,13.509a34.855,34.855,0,0,1-10.1,3.668A31.565,31.565,0,0,1,219,85.239ZM170.9,54.962a67.77,67.77,0,0,1,6.115,6.924,62.357,62.357,0,0,0,6.329,7.1,72.82,72.82,0,0,0,13.837,9.951,51.034,51.034,0,0,0,15.992,5.742,32.768,32.768,0,0,0,11.728-.054,34.823,34.823,0,0,0,10.082-3.662c6.306-3.386,11.793-8.3,17.6-13.5A142.566,142.566,0,0,1,265.6,56.713a82.419,82.419,0,0,1,18.766-10.246c6.826-2.454,12.723-2.846,17.526-1.164a17.446,17.446,0,0,1,7.752,5.535,31.609,31.609,0,0,1,5.517,11.1c.375-8.573-1.828-14.441-6.549-17.442-3.794-2.414-9.135-2.957-15.871-1.613a70.056,70.056,0,0,0-18.119,6.788c-6.083,3.21-12.073,7.754-17.867,12.148-11.678,8.858-23.73,18-38.173,18-1,0-2.01-.044-3.034-.135-11.9-1.055-21.346-8.184-30.485-15.078a131.045,131.045,0,0,0-12.625-8.779Q171.663,55.371,170.9,54.962Zm-280.051.254a18.453,18.453,0,0,1,9.6,2.465,38.364,38.364,0,0,1,7.575,6.351,49.822,49.822,0,0,0,8.242,7.034A34.686,34.686,0,0,0-71.1,75.991a48.3,48.3,0,0,0,13.5.382c9.173-.908,18.494-3.763,27.508-6.523,5.022-1.538,9.765-2.991,14.313-4.06A74.586,74.586,0,0,1-1.151,63.871a96.3,96.3,0,0,1,14.39.641c9.546,1.095,18.83,3.291,28.658,5.616q1.989.471,3.989.941c17.134,4.014,37.787,4.047,56.664.092,7.059-1.48,15.017-5.659,23.443-10.083,7.528-3.953,15.212-7.988,22.411-10.1-7.645,1.2-15.768,4.282-23.706,7.3-7.632,2.9-15.522,5.891-22.632,7.014a214.409,214.409,0,0,1-31.527,2.6A206.2,206.2,0,0,1,39.282,65.8c-3.712-.537-7.337-1.164-10.842-1.771C14.915,61.694,2.14,59.487-12.124,63c-3.619.891-7.291,1.909-10.841,2.893-9.533,2.641-19.39,5.373-28.893,5.813a48,48,0,0,1-14.13-1.3,42.383,42.383,0,0,1-13.83-6.316,61.085,61.085,0,0,0-14.576-7.641,40.931,40.931,0,0,0-13.731-2.3c-9.189.033-18.943,3.026-30.758,7.514,4.614,3.412,11.214.331,17.6-2.647,4.019-1.875,7.814-3.646,11-3.784Q-109.707,55.217-109.148,55.216ZM154.658,50.4a29.356,29.356,0,0,1,4.132.28,35.869,35.869,0,0,1,11.735,4.013,18.437,18.437,0,0,0-8.464-4.7,26.829,26.829,0,0,0-12.763.79A39.368,39.368,0,0,1,154.658,50.4Z"
-                                                                transform="translate(139.003 -42.1)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_687" data-name="Group 687"
-                                                            transform="translate(18.734 51.415)">
-                                                            <path id="Path_743" data-name="Path 743"
-                                                                d="M225.162,87.166a44.842,44.842,0,0,1-4.546-.236,59.763,59.763,0,0,1-12.492-2.761c-8.276-2.7-16.48-6.87-24.413-10.906-8.443-4.294-16.416-8.352-24.223-10.609a36.5,36.5,0,0,0-17.3-.482A114.5,114.5,0,0,0,125.27,67.3c-6.56,2.363-13.345,4.806-20.291,5.744-6.015.813-12.023-.061-17.836-.907-2.58-.375-5.2-.756-7.831-.988q-1.414-.041-2.886-.088c-2.019-.065-4.051-.013-6.078.105-.185.021-.368.045-.552.071-3.76.512-6.282,1.021-8.124,1.393-3.732.752-5.179,1.045-9.648.094a51.362,51.362,0,0,1-9.335-.409A154.991,154.991,0,0,1,23.7,67.984C15.171,65.642,6.964,63.39-2.18,63.39h0a54.669,54.669,0,0,0-6.02.756c-9,1.655-17.621,4.931-25.964,8.1A190.275,190.275,0,0,1-54.133,79a65.561,65.561,0,0,1-21.164,2.2c-9.031-.644-14.791-3.8-21.461-7.462-2.09-1.146-4.252-2.331-6.643-3.514-9.388-4.641-17.236-4.492-26.323-4.32-2.927.055-5.952.112-9.2.014l-.121,0,.689-.334c10.43-5.078,23.41-11.4,35.264-7.12,4.646,1.676,7.971,5.044,11.187,8.3a41.258,41.258,0,0,0,7.979,6.806c16.488,9.82,33.948,3.388,50.833-2.833a158.113,158.113,0,0,1,18.217-5.915A55.273,55.273,0,0,1-2.18,63.33c14.767-1.056,30.847,3.231,45.243,7.068q1.6.426,3.163.842c2.422.64,4.287,1.107,5.8,1.43,3.355-.127,6.7-.475,9.991-.817,2.735-.286,5.526-.576,8.322-.739a43.727,43.727,0,0,1,8.974-.018c11.711.333,20.663.225,31.523-2.176a122.492,122.492,0,0,0,16.525-5.372c5.939-2.245,12.08-4.566,18.1-5.642a36.631,36.631,0,0,1,9.051-.567,28.856,28.856,0,0,1,9.106,2.115,191.963,191.963,0,0,1,18.062,8.926,170.611,170.611,0,0,0,19.2,9.335,61.787,61.787,0,0,0,21.393,4.438c.269.006.537.007.8.007,14.825,0,23.268-7.482,32.2-15.394,5.491-4.867,11.17-9.9,18.616-13.412a59.274,59.274,0,0,1,18.648-4.92c5.4-.486,12.785-.276,17.276,3.5,3.759,3.157,4.722,8.194,2.867,14.973l-.021.075-.034-.07a30.446,30.446,0,0,0-7.152-9.519,24.626,24.626,0,0,0-9.264-5.088c-6.555-1.938-14.281-1.332-22.347,1.748s-13.988,9.836-19.7,16.365a93.7,93.7,0,0,1-9.6,9.971,25.41,25.41,0,0,1-11.345,5.956A39.012,39.012,0,0,1,225.162,87.166ZM150.214,61.312A33.2,33.2,0,0,1,159.5,62.6c7.813,2.26,15.789,6.317,24.233,10.613,7.932,4.034,16.133,8.207,24.4,10.9a59.552,59.552,0,0,0,12.48,2.758,40.428,40.428,0,0,0,12.585-.589,25.348,25.348,0,0,0,11.32-5.943,93.712,93.712,0,0,0,9.6-9.964c5.719-6.535,11.632-13.291,19.725-16.382,8.077-3.086,15.817-3.69,22.385-1.75a24.707,24.707,0,0,1,9.287,5.1,30.472,30.472,0,0,1,7.13,9.466c1.821-6.717.857-11.708-2.867-14.837-4.476-3.759-11.841-3.968-17.233-3.481A59.185,59.185,0,0,0,273.922,53.4c-7.439,3.51-13.114,8.539-18.6,13.4-8.937,7.919-17.39,15.409-32.235,15.409-.267,0-.534,0-.8-.007a61.836,61.836,0,0,1-21.413-4.442,170.981,170.981,0,0,1-19.206-9.338A191.463,191.463,0,0,0,163.6,59.508a28.789,28.789,0,0,0-9.089-2.112,36.66,36.66,0,0,0-9.037.567c-6.019,1.075-12.157,3.4-18.095,5.639a122.671,122.671,0,0,1-16.532,5.375c-10.589,2.341-19.366,2.5-30.647,2.2,2.334.233,4.656.571,6.947.906,5.808.844,11.813,1.719,17.82.907,6.939-.937,13.721-3.38,20.278-5.742a114.739,114.739,0,0,1,16.921-5.135A42.914,42.914,0,0,1,150.214,61.312Zm-275,4.465c7.115,0,13.748.6,21.407,4.39,2.394,1.183,4.555,2.368,6.646,3.514,6.664,3.655,12.419,6.812,21.437,7.455A65.488,65.488,0,0,0-54.148,78.94a190.7,190.7,0,0,0,19.96-6.748c8.344-3.17,16.975-6.448,25.974-8.1,1.709-.314,3.443-.542,5.194-.692A55.306,55.306,0,0,0-14.863,64.87a158.542,158.542,0,0,0-18.21,5.914c-10.6,3.906-21.434,7.9-32.111,7.9a35.774,35.774,0,0,1-18.771-5.068A41.35,41.35,0,0,1-91.948,66.8c-3.211-3.252-6.532-6.616-11.165-8.288-11.831-4.267-24.8,2.046-35.219,7.118l-.472.23c3.2.094,6.189.037,9.078-.018C-128.042,65.808-126.4,65.777-124.782,65.777Zm177.05,6.943c4.279.89,5.737.6,9.394-.142,1.79-.361,4.221-.853,7.806-1.35-2.5.169-4.992.429-7.439.684C58.814,72.246,55.544,72.586,52.267,72.719ZM-1.357,63.336c8.823.129,16.794,2.317,25.076,4.59A154.669,154.669,0,0,0,42.7,72.262a50.869,50.869,0,0,0,9.091.417c-1.476-.321-3.275-.773-5.577-1.382q-1.565-.414-3.164-.842C28.923,66.691,13.174,62.493-1.357,63.336ZM74.63,70.978q.9,0,1.8.028l1.689.053a43.887,43.887,0,0,0-6.513-.011C72.612,71,73.622,70.978,74.63,70.978Z"
-                                                                transform="translate(139.046 -48.242)"
-                                                                fill="#646464" />
-                                                        </g>
-                                                        <g id="Group_688" data-name="Group 688"
-                                                            transform="translate(18.649 61.65)">
-                                                            <path id="Path_744" data-name="Path 744"
-                                                                d="M231.932,88.52a101.254,101.254,0,0,1-11.632-.958l-1.451-.172c-12.939-1.521-25.308-5.9-37.268-10.13-10.816-3.827-22-7.784-33.447-9.543a51.619,51.619,0,0,0-15.763.263c-5.257.806-10.612,2.174-15.79,3.5-8.373,2.141-17.033,4.351-25.629,4.3-2.174-.013-4.292-.109-6.34-.2-7.3-.334-14.2-.648-21.553,2.934a53.512,53.512,0,0,0-7,4.121c-2.078,1.4-3.581,2.414-5.683,2.7-2.154.287-4.887-.171-9.435-1.581a136.647,136.647,0,0,1-17.1-7.012A145.868,145.868,0,0,0,8.973,70.476a53.493,53.493,0,0,0-16.324-2.97,70.054,70.054,0,0,0-20.9,3.137q-1.356.4-2.709.832c-2.456.985-4.9,2.023-7.324,3.049A151.368,151.368,0,0,1-57.79,81.776c-7.985,3.014-16.19,5.567-24.695,6.336-10.627.96-19.014-4.867-27.127-10.5-9.284-6.451-18.054-12.544-29.277-7.924l-.218.091.189-.141a28.581,28.581,0,0,1,11-5.287,23.779,23.779,0,0,1,10.265.053c6.654,1.422,13.128,5.3,19.388,9.058,5.47,3.279,11.126,6.673,16.986,8.511a35.059,35.059,0,0,0,10.859,1.6,47.494,47.494,0,0,0,10.774-1.385q.915-.215,1.832-.462c3.251-1.227,6.465-2.532,9.649-3.823,5.6-2.272,11.358-4.609,17.182-6.477,6.45-2.586,12.981-4.813,19.408-5.565,14.9-1.744,29.5,1.64,43.618,4.914,5.823,1.35,11.844,2.746,17.752,3.744,6.108,1.031,11.965.4,18.167-.27a96.45,96.45,0,0,1,13.839-.813c10.447.363,18.7.65,29.129-2.075,4.257-1.112,8.17-2.444,11.952-3.732,10.878-3.7,20.271-6.9,32.414-3.1,6.459,2.021,12.844,4.336,19.017,6.575,8.778,3.183,17.855,6.474,26.992,8.842a106.265,106.265,0,0,0,28.519,3.726A31.274,31.274,0,0,0,245.2,79.78c4.057-2.272,7.318-5.277,10.77-8.46q1.132-1.047,2.29-2.1c2.87-4.417,6.185-8.451,12.881-11.23a30.1,30.1,0,0,1,17.836-1.973c.7-.061,1.4-.114,2.11-.154a44.115,44.115,0,0,1,10.595.507c3.439.657,5.978,1.834,7.544,3.5,2.53,2.688,2.512,6.614-.054,11.669l-.026.048-.027-.047c-4.107-6.927-9.725-11.883-16.248-14.329a26.889,26.889,0,0,0-3.9-1.134c-6.819.6-13.29,2.185-16.474,3.567A50.907,50.907,0,0,0,258.3,69.262c-.56.863-1.1,1.741-1.655,2.628a53.355,53.355,0,0,1-6.885,9.408,21.791,21.791,0,0,1-13.432,6.95A33.27,33.27,0,0,1,231.932,88.52Zm-90.4-21.349a43.4,43.4,0,0,1,6.612.486c11.453,1.761,22.639,5.719,33.459,9.547,11.958,4.232,24.322,8.607,37.256,10.127l1.451.172c6.007.714,11.195,1.331,16.018.685a21.726,21.726,0,0,0,13.4-6.931,53.284,53.284,0,0,0,6.877-9.4c.51-.823,1.016-1.639,1.535-2.444-.718.65-1.424,1.3-2.127,1.947-3.454,3.186-6.717,6.194-10.781,8.47a31.348,31.348,0,0,1-15.394,3.889A106.27,106.27,0,0,1,201.3,79.993c-9.142-2.368-18.22-5.661-27-8.843-6.174-2.237-12.556-4.552-19.014-6.573-12.124-3.793-21.509-.6-32.377,3.1-3.784,1.289-7.7,2.621-11.957,3.734-10.44,2.727-18.695,2.439-29.147,2.075a96.769,96.769,0,0,0-13.83.813c-6.205.671-12.066,1.3-18.183.27-5.911-1-11.932-2.394-17.755-3.744-14.114-3.272-28.711-6.657-43.6-4.913-6.167.722-12.434,2.8-18.632,5.258.643-.2,1.288-.4,1.932-.586A70.118,70.118,0,0,1-7.351,67.448,53.477,53.477,0,0,1,8.991,70.421a145.7,145.7,0,0,1,14.876,6.253,136.5,136.5,0,0,0,17.09,7.01c4.54,1.407,7.265,1.865,9.409,1.578,2.09-.279,3.587-1.288,5.659-2.685a53.415,53.415,0,0,1,7-4.124C70.4,74.863,77.3,75.177,84.613,75.511c2.047.094,4.165.19,6.337.2h.316c8.487,0,17.031-2.185,25.3-4.3,5.18-1.323,10.538-2.692,15.8-3.5A60.531,60.531,0,0,1,141.53,67.171Zm-272.578.834c7.72,0,... (443 KB left)
+</section> --}}

@@ -9,7 +9,9 @@ use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\Admin\SocialsController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\ServicesController as ControllersServicesController;
+use App\Http\Controllers\Website\HomeCardsController;
 use App\Http\Controllers\Website\HomeHeadersController;
+use App\Http\Controllers\Website\HomeMain1Controller;
 use App\Models\Social;
 use Illuminate\Support\Facades\Route;
 
@@ -66,5 +68,8 @@ Route::prefix('home')
 ->group(function () {
     // home/header/
     Route::resource('header', HomeHeadersController::class);
+    Route::resource('card', HomeCardsController::class);
+    Route::get('main/edit' , [HomeMain1Controller::class, 'customEdit']);
+    Route::resource('main', HomeMain1Controller::class);
 });
 require __DIR__ . '/auth.php';

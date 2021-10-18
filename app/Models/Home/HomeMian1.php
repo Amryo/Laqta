@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class HomeMian1 extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['description','type'];
 }
