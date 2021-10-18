@@ -22,6 +22,7 @@ class CreateProjectsTable extends Migration
             $table->unsignedInteger('year');
             $table->enum('status', ['Active', 'Draft']);
             $table->foreignId('category_id')->constrained('categories', 'id')->cascadeOnDelete();
+            $table->enum('featured', [1, 2]);
             $table->string('image')->nullable();
             $table->timestamps();
         });

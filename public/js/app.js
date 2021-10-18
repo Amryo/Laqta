@@ -4022,12 +4022,13 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
+console.log('jjjjjjjjjjjjjj');
 window.Echo["private"]('contacts').listen('.contact.created', function (event) {
   var count = Number($('#num').text());
   count++;
   $('#num').text(count);
   console.log(event.message.url);
-  $('#not').append("    \n        <div class=\"d-flex align-items-center mb-2\">\n        <div class=\"symbol symbol-40 symbol-light-info mr-5\">\n            *\n        </div>\n        <div class=\"d-flex flex-column font-weight-bold\">\n            <a href=\"".concat(event.message.url, "\" class=\"text-dark text-hover-primary mb-1 font-size-lg\">").concat(event.message.title, "</a>\n            <span class=\"text-muted\">").concat(event.message.email, "</span>\n        </div></div>"));
+  $('#not').append("    \n        <div class=\"d-flex align-items-center mb-2\">\n        <div class=\"symbol symbol-40 symbol-light-info mr-5\">\n            *\n        </div>\n        <div class=\"d-flex flex-column font-weight-bold\">\n            <a href=\"http://127.0.0.1:8000/admins/applications/contacts/".concat(event.message.id, "\" class=\"text-dark text-hover-primary mb-1 font-size-lg\">").concat(event.message.title, "</a>\n            <span class=\"text-muted\">").concat(event.message.email, "</span>\n        </div></div>"));
 });
 
 /***/ }),

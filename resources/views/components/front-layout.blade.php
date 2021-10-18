@@ -26,10 +26,7 @@
 
     {{ $slot }}
 
-<<<<<<< HEAD
-=======
 
->>>>>>> ad34aafd5354dc8ca171b7c4a408fab485916b98
 
     <!-- contactSection -->
 

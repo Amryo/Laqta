@@ -2,6 +2,7 @@ require('./bootstrap');
 
 require('alpinejs');
 
+console.log('jjjjjjjjjjjjjj');
 window.Echo.private('contacts')
 .listen('.contact.created', function(event) {
     var count = Number($('#num').text());

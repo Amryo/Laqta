@@ -1,11 +1,11 @@
 <div class="card-body">
     <div class="form-group mb-8">
-     <div class="alert alert-custom alert-default" role="alert">
-      <div class="alert-icon"><i class="flaticon-warning text-primary"></i></div>
-      <div class="alert-text">
-       Here are examples of <code>.form-control</code> applied to each textual HTML5 input type:
-      </div>
-     </div>
+        <div class="alert alert-custom alert-default" role="alert">
+            <div class="alert-icon"><i class="flaticon-warning text-primary"></i></div>
+            <div class="alert-text">
+                Here are examples of <code>.form-control</code> applied to each textual HTML5 input type:
+            </div>
+        </div>
     </div>
     <div class="form-group row">
 
@@ -34,26 +34,46 @@
             <select name="category_id" class="form-control selectpicker" data-size="7" data-live-search="true">
                 <option value="">Select</option>
                 @foreach ($categories as $category)
-                <option @if ($category->id == $project->category_id) selected @endif value="{{$category->id}}">{{$category->name}}</option> 
+                <option @if ($category->id == $project->category_id) selected @endif
+                    value="{{$category->id}}">{{$category->name}}</option>
                 @endforeach
             </select>
             <span class="form-text text-muted">you can select any category </span>
         </div>
     </div>
-      
+
     <div class="form-group row">
-     <label  class="col-2 col-form-label">project Name</label>
-     <div  class="col-10">
-      <input id="kt_maxlength_1" name="name" class="form-control" type="text" maxlength="25" value="{{$project->name}}" id="example-text-input"/>
-     </div>
+        <label class="col-2 col-form-label">State</label>
+        <div class="col-10">
+            <div class="radio-inline">
+                <label class="radio radio-danger">
+                    <input type="radio" value="1" name="featured" checked="checked" />
+                    <span></span>
+                    Indevidual
+                </label>
+                <label class="radio radio-danger">
+                    <input type="radio" value="2" name="featured" />
+                    <span></span>
+                    Government
+                </label>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">project Name</label>
+        <div class="col-10">
+            <input id="kt_maxlength_1" name="name" class="form-control" type="text" maxlength="25" value="{{$project->name}}" id="example-text-input" />
+        </div>
     </div>
     <div class="form-group row">
-     <label for="example-search-input" class="col-2 col-form-label">Secondary Text</label>
-     <div class="col-10">
-      <input id="kt_maxlength_2" name="secondary" class="form-control" type="search" maxlength="25" value="{{$project->secondary}}" id="example-search-input"/>
-     </div>
+        <label for="example-search-input" class="col-2 col-form-label">Secondary Text</label>
+        <div class="col-10">
+            <input id="kt_maxlength_2" name="secondary" class="form-control" type="search" maxlength="25" value="{{$project->secondary}}" id="example-search-input" />
+        </div>
     </div>
-    
+
     <div class="form-group row">
         <label for="example-search-input" class="col-2 col-form-label">Descriptions</label>
         <div class="col-10" style="position: relative;">
@@ -72,29 +92,29 @@
         <div class="col-10">
             <div class="radio-inline">
                 <label class="radio radio-danger">
-                    <input type="radio" value="Active" name="status" checked="checked"/>
+                    <input type="radio" value="Active" name="status" checked="checked" />
                     <span></span>
                     Active
                 </label>
                 <label class="radio radio-danger">
-                    <input type="radio" value="Draft" name="status"  />
+                    <input type="radio" value="Draft" name="status" />
                     <span></span>
                     Draft
                 </label>
-                
+
             </div>
         </div>
     </div>
-    
-   
-   </div>
-   <div class="card-footer">
+
+
+</div>
+<div class="card-footer">
     <div class="row">
-     <div class="col-2">
-     </div>
-     <div class="col-10">
-      <button type="submit" class="btn btn-success mr-2">{{$button}}</button>
-      <button type="reset" class="btn btn-secondary">Cancel</button>
-     </div>
+        <div class="col-2">
+        </div>
+        <div class="col-10">
+            <button type="submit" class="btn btn-success mr-2">{{$button}}</button>
+            <button type="reset" class="btn btn-secondary">Cancel</button>
+        </div>
     </div>
-   </div>
+</div>

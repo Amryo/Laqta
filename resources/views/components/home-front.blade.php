@@ -1,6 +1,6 @@
 <section class="backGroundVideo position-absolute w-100 h-100 overflow-hidden">
     <div class="position-absolute w-100 h-100" style="background-color: #000000a6;"></div>
-    <video class="lightVideo" id="videoSource" src="{{ asset('uploads/') }}/{{$header->video1 ?? ''}}"
+    <video class="lightVideo" id="videoSource" src="{{ asset('uploads/') }}/{{$header->video1}}"
         autoplay loop muted></video>
     <!-- <video autoplay loop muted>
  <source class="lightVideo" id="videoSource" src="./assets/videos/header-bg-main-dark.mp4" type="video/mp4">
@@ -81,25 +81,25 @@
             <div class="container">
                 <p class="d-none d-md-block text-uppercase text-white fs-45px ft-Gilroy-Thin"
                     style="margin-bottom: -38px;">
-                    {{{$header->paragraph1 ?? ''}}}</p>
+                    {{{$header->paragraph1}}}</p>
                 <p class="d-block d-md-none text-uppercase text-white fs-24px ft-Gilroy-Thin"
                     style="margin-bottom: -6px;">
-                    {{$header->paragraph1 ?? ''}}</p>
+                    {{$header->paragraph1}}</p>
 
                 <div class="d-md-flex flex-wrap justify-content-between mb-4">
                     <p
                         class="d-none d-md-block text-uppercase text-white fs-90px mb-0 me-lg-5 ft-Gilroy-ExtraBold">
-                        {{$header->title ?? ''}}
+                        {{$header->title}}
                     </p>
                     <p class="d-block d-md-none text-uppercase text-white fs-41px mb-0 ft-Gilroy-ExtraBold">
-                        {{$header->title ?? ''}}
+                        {{$header->title}}
                     </p>
                     <div class="d-flex flex-column justify-content-end">
                         <div class="d-none d-md-block">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="fs-15px text-uppercase mb-0 text-secondary text-justify pe-md-5"
                                     style="max-width: 600px;">
-                                    {{$header->paragraph2 ?? ''}}
+                                    {{$header->paragraph2}}
                                 </p>
                                 <a id="aboutBtn" class="ms-5 text-decoration-none position-relative zIndex-60"
                                     href="./about.html">
@@ -190,7 +190,7 @@
 
         <!-- laqtaFor -->
         <div class="laqtaFor d-none d-lg-block position-absolute">
-            <p class="mb-0 fs-15px text-uppercase">{{$header->slider ?? ''}}</p>
+            <p class="mb-0 fs-15px text-uppercase">{{$header->slider}}</p>
         </div>
 
         <!-- ScrollDown -->

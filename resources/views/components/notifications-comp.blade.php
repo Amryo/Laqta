@@ -57,9 +57,9 @@
                 </div>
 
                 <div class="d-flex flex-column font-weight-bold">
-                    <a href="http://127.0.0.1:8000/admins/applications/contacts/{{ $notification->id }}"
-                        class="text-dark text-hover-primary mb-1 font-size-lg">{{ $notification->data['title'] }}</a>
-                    <span class="text-muted">{{ $notification->data['email'] }}</span>
+                    <a href="http://127.0.0.1:8000/admins/applications/contacts/{{ $notification->id ?? ''}}"
+                        class="text-dark text-hover-primary mb-1 font-size-lg">{{ $notification->data['title'] ?? ''}}</a>
+                    <span class="text-muted">{{ $notification->data['email'] ?? ''}}</span>
                 </div>
             </div>
             @endforeach

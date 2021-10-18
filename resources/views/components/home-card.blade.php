@@ -2,12 +2,12 @@
 <div class="d-none d-lg-block contentCard contentCardDesktop contentCardDark m-auto d-lg-flex flex-wrap p-4 mb-5"
            data-aos="fade-up">
            <div class="d-flex flex-row justify-content-center align-items-center flex-basis-40">
-               <p class="text-secondary m-0 ft-Gilroy-bold fs-60px">{{$card->number}}</p>
+               <p class="text-secondary m-0 ft-Gilroy-bold fs-60px">{{$card->number ?? ''}}</p>
                <div class="ms-3">
                    <p class="d-flex flex-column m-0 line-height-16px">
-                       <span class="text-uppercase text-secondary">{{$card->paragraph1}}</span>
+                       <span class="text-uppercase text-secondary">{{$card->paragraph1 ?? ''}}</span>
                        <span class="text-uppercase text-secondary">
-                           {{$card->paragraph2}}
+                           {{$card->paragraph2 ?? ''}}
                            <svg class="mb-1 ms-2" xmlns="http://www.w3.org/2000/svg" width="13.786" height="13.786"
                                viewBox="0 0 13.786 13.786">
                                <path class="whiteFillTheme whiteStrokeTheme" id="Path_4443" data-name="Path 4443"
@@ -35,7 +35,7 @@
                <img src="{{ asset('front/assets/imgs/radioShape.png') }}" alt="radioShape">
            </div>
            <div class="d-flex flex-row justify-content-center justify-content-around align-items-center flex-basis-40">
-               <p class="mb-0 text-uppercase text-secondary">{{$card->paragraph3}}</p>
+               <p class="mb-0 text-uppercase text-secondary">{{$card->paragraph3 ?? ''}}</p>
                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="5" viewBox="0 0 21 5">
                    <g id="Group_1395" data-name="Group 1395" transform="translate(4525 -9498) rotate(90)">
                        <circle class="whiteFillTheme" id="Ellipse_351" data-name="Ellipse 351" cx="2.5" cy="2.5" r="2.5"
@@ -52,12 +52,12 @@
        <div class="d-block d-lg-none contentCard contentCardMobile w-80-just-lg contentCardDark m-auto d-lg-flex flex-wrap p-4 mb-5"
            data-aos="fade-up">
            <div class="d-flex flex-row justify-content-around align-items-center flex-basis-40">
-               <p class="text-secondary m-0 ft-Gilroy-bold fs-60px">{{$card->number}}</p>
+               <p class="text-secondary m-0 ft-Gilroy-bold fs-60px">{{$card->number ?? ''}}</p>
                <div>
                    <p class="d-flex flex-column m-0 line-height-16px">
-                       <span class="text-uppercase text-secondary">{{$card->paragraph1}}</span>
+                       <span class="text-uppercase text-secondary">{{$card->paragraph1 ?? ''}}</span>
                        <span class="text-uppercase text-secondary">
-                           {{$card->paragraph2}}
+                           {{$card->paragraph2 ?? ''}}
                            <svg class="mb-1 ms-2" xmlns="http://www.w3.org/2000/svg" width="13.786" height="13.786"
                                viewBox="0 0 13.786 13.786">
                                <path class="whiteFillTheme" id="Path_4443" data-name="Path 4443"

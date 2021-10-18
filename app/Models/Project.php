@@ -5,11 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Spatie\Searchable\Searchable;
+use Spatie\Searchable\SearchResult;
 
 class Project extends Model
 {
     use HasFactory;
-    protected $fillable = ['name', 'slug', 'secondary', 'description', 'image', 'status', 'year', 'category_id'];
+    protected $fillable = [
+        'name', 'slug', 'secondary', 'description', 'image', 'status', 'year', 'category_id', 'featured'
+    ];
 
     public static function booted()
     {
@@ -19,7 +23,7 @@ class Project extends Model
         });
     }
 
-    public function Category()
+    public function category()
     {
         return $this->belongsTo(Category::class, 'category_id', 'id');
     }
@@ -38,4 +42,22 @@ class Project extends Model
 
         ];
     }
+
+    public function getFeatAttribute()
+    {
+        if ($this->featured == 1) {
+            return 'Individual';
+        }
+        return 'Government';
+    }
+
+    // public function getSearchResult(): SearchResult
+    // {
+    //     $url = route('fproject.show', $this);
+    //     return new \Spatie\Searchable\SearchResult(
+    //         $this,
+    //         $this->name,
+    //         $url
+    //     );
+    // }
 }

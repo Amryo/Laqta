@@ -76,7 +76,7 @@
                 <div class="d-flex sectionTitle-top pt-2">
                     <div class="flex-basis-60 d-flex gap-2 gap-md-5">
                         <div class="line-height-20px">
-                            <p class="text-secondary-sm-title fs-20px text-uppercase mb-0">{{$aboutclients->name}}</p>
+                            <p class="text-secondary-sm-title fs-20px text-uppercase mb-0">{{$aboutclients->name ?? 'WE HAVE A LOT OF CLIENTS'}}</p>
                            
                         </div>
                         <div class="d-flex align-items-end">
@@ -102,7 +102,7 @@
                 </div>
                 <div class="fs-15px text-secondary pe-md-5 text-uppercase line-height-23px position-relative pt-3 mb-15 mb-xl-0 text-justify"
                     style="margin-top: 3rem;">
-                    {{$aboutclients->description}}
+                    {{$aboutclients->description ?? 'LAQTAH FOR PRODUCTION IS A COMPANY THAT SPECIALIZES IN PROVIDING HIGH-QUALITY PHOTOGRAPHY, DESIGN SERVICES INCLUDING MOTION GRAPHICS AND DRAWINGS, APP DEVELOPMENT, ACCOUNTS MANAGEMENT, AND MARKETING STRATEGIES. IT CONSISTS OF A TALENTED EMIRATI TEAM OF YOUTH WITH A PASSION TO ACHIEVE. THE COMPANY ALSO CREATES AN ENVIRONMENT CONDUCIVE TO INNOVATION, OPPORTUNITIES, AND TALENT DEVELOPMENT IN ORDER TO REACH THE HIGHEST POSITIONS LAQTAH FOR PRODUCTION IS A COMPANY THAT SPECIALIZES IN PROVIDING HIGH-QUALITY PHOTOGRAPHY, DESIGN SERVICES INCLUDING MOTION GRAPHICS AND DRAWINGS, APP DEVELOPMENT, ACCOUNTS MANAGEMENT, AND MARKETING STRATEGIES. IT CONSISTS OF A TALENTED EMIRATI TEAM OF YOUTH WITH A PASSION TO ACHIEVE. THE COMPANY ALSO CREATES AN ENVIRONMENT CONDUCIVE TO INNOVATION, OPPORTUNITIES, AND TALENT DEVELOPMENT IN ORDER TO REACH THE HIGHEST POSITIONS LAQTAH FOR PRODUCTION IS A COMPANY THAT SPECIALIZES IN PROVIDING HIGH-QUALITY PHOTOGRAPHY, DESIGN SERVICES INCLUDING MOTION GRAPHICS AND DRAWINGS, APP DEVELOPMENT, ACCOUNTS MANAGEMENT, AND MARKETING STRATEGIES. IT CONSISTS OF A TALENTED EMIRATI TEAM OF YOUTH WITH A PASSION TO ACHIEVE. THE COMPANY ALSO CREATES AN ENVIRONMENT CONDUCIVE TO INNOVATION, OPPORTUNITIES, AND TALENT DEVELOPMENT IN ORDER TO REACH THE HIGHEST POSITIONS'}}
 
                 </div>
             </div>

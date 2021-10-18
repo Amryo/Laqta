@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6554d0c018beefb796152e439c58271a",
+    "content-hash": "cf69e9e0cdc93e44ad8c225027efd36f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -176,8 +176,6 @@
             "time": "2021-08-15T20:50:18+00:00"
         },
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
             "name": "dasprid/enum",
             "version": "1.0.3",
             "source": {
@@ -225,8 +223,6 @@
             "time": "2020-10-02T16:03:48+00:00"
         },
         {
-=======
->>>>>>> ad34aafd5354dc8ca171b7c4a408fab485916b98
             "name": "dflydev/dot-access-data",
             "version": "v3.0.1",
             "source": {
@@ -302,11 +298,6 @@
             "time": "2021-08-13T13:06:58+00:00"
         },
         {
-<<<<<<< HEAD
-=======
->>>>>>> bfba380cdcd2519a8ec2e8252726dd3dc0dd72c7
-=======
->>>>>>> ad34aafd5354dc8ca171b7c4a408fab485916b98
             "name": "doctrine/inflector",
             "version": "2.0.3",
             "source": {
@@ -747,16 +738,16 @@
         },
         {
             "name": "graham-campbell/result-type",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Result-Type.git",
-                "reference": "84afea85c6841deeea872f36249a206e878a5de0"
+                "reference": "296c015dc30ec4322168c5ad3ee5cc11dae827ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/84afea85c6841deeea872f36249a206e878a5de0",
-                "reference": "84afea85c6841deeea872f36249a206e878a5de0",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/296c015dc30ec4322168c5ad3ee5cc11dae827ac",
+                "reference": "296c015dc30ec4322168c5ad3ee5cc11dae827ac",
                 "shasum": ""
             },
             "require": {
@@ -792,7 +783,7 @@
             ],
             "support": {
                 "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
-                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.2"
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.0.3"
             },
             "funding": [
                 {
@@ -804,7 +795,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-28T21:34:50+00:00"
+            "time": "2021-10-17T19:48:54+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -2338,7 +2329,6 @@
             "time": "2021-04-09T13:42:10+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "paragonie/constant_time_encoding",
             "version": "v2.4.0",
             "source": {
@@ -2365,32 +2355,6 @@
                     "ParagonIE\\ConstantTime\\": "src/"
                 }
             },
-=======
-            "name": "paragonie/random_compat",
-            "version": "v9.99.100",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
-                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">= 7"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.*|5.*",
-                "vimeo/psalm": "^1"
-            },
-            "suggest": {
-                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
-            },
-            "type": "library",
->>>>>>> bfba380cdcd2519a8ec2e8252726dd3dc0dd72c7
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -2399,7 +2363,6 @@
                 {
                     "name": "Paragon Initiative Enterprises",
                     "email": "security@paragonie.com",
-<<<<<<< HEAD
                     "homepage": "https://paragonie.com",
                     "role": "Maintainer"
                 },
@@ -2431,7 +2394,40 @@
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
             "time": "2020-12-06T15:14:20+00:00"
-=======
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v9.99.100",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
                     "homepage": "https://paragonie.com"
                 }
             ],
@@ -2534,7 +2530,6 @@
                 "source": "https://github.com/paragonie/sodium_compat/tree/v1.17.0"
             },
             "time": "2021-08-10T02:43:50+00:00"
->>>>>>> bfba380cdcd2519a8ec2e8252726dd3dc0dd72c7
         },
         {
             "name": "phpoption/phpoption",
