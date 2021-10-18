@@ -12,7 +12,7 @@ class Category extends Model
     protected $fillable = ['name', 'slug', 'description', 'image', 'status'];
 
 
-    public function Projects()
+    public function projects()
     {
         return $this->hasMany(Project::class, 'category_id', 'id');
     }

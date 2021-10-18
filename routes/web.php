@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\RulesController;
 use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\Admin\SocialsController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\ProjectsController as ControllersProjectsController;
 use App\Http\Controllers\ServicesController as ControllersServicesController;
 use App\Http\Controllers\Website\HomeCardsController;
 use App\Http\Controllers\Website\HomeHeadersController;
@@ -38,6 +39,13 @@ Route::get('/', function () {
 })->name('index');
 Route::post('contacts', [ContactsController::class, 'store'])->name('contacts.store');
 Route::get('services', [ControllersServicesController::class, 'index'])->name('services.index');
+Route::get('projects', [ControllersProjectsController::class, 'index']);
+Route::get('projects/show/{project}', [ControllersProjectsController::class, 'show'])->name('fproject.show');
+Route::get('category/projects/{category}', [ControllersProjectsController::class, 'showCategoryProjects'])->name('projects.category');
+Route::get('fearured/projects/{feature}', [ControllersProjectsController::class, 'showFeatureProjects'])->name('fearured.category');
+
+Route::get('search', [SrController::class, 'search']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
