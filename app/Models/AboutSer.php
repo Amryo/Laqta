@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Models\Home;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class HomeMian1 extends Model
+class AboutSer extends Model
 {
     use HasFactory;
-
-    protected $fillable = ['description','type'];
+    protected $fillable = ['name', 'description'];
 }

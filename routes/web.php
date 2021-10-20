@@ -12,10 +12,15 @@ use App\Http\Controllers\FrondEndController;
 use App\Http\Controllers\ProjectsController as ControllersProjectsController;
 use App\Http\Controllers\ServicesController as ControllersServicesController;
 use App\Http\Controllers\SrController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Website\AboutUs\AboutusController;
 use App\Http\Controllers\Website\AboutUs\TeamController;
 use App\Http\Controllers\Website\ClientsController as WebsiteClientsController;
+use App\Http\Controllers\Website\HomeCardsController;
 use App\Http\Controllers\Website\HomeHeadersController;
+use App\Http\Controllers\Website\HomeMain1Controller;
+use App\Http\Controllers\Website\Services\ServiceController;
+
 use App\Models\Social;
 use Illuminate\Support\Facades\Route;
 
@@ -60,10 +65,11 @@ Route::get('/dashboard', function () {
 Route::get('/quick-search', 'PagesController@quickSearch')->name('quick-search');
 
 Route::view('forgot', 'auth.forgot-password2');
-Route::prefix('admins')->group(function () {
+Route::prefix('admins')->middleware('auth')->group(function () {
     Route::view('info', 'admins.Profile.personal-information');
     Route::view('dashboard', 'pages.dashboard')->name('dashboard2');
     Route::prefix('applications')->group(function () {
+        Route::resource('users', UserController::class);
         Route::resource('categories', CategoryController::class);
         Route::resource('projects', ProjectsController::class);
         Route::resource('services', ServicesController::class);
@@ -76,6 +82,7 @@ Route::prefix('admins')->group(function () {
         Route::resource('clients-description', WebsiteClientsController::class);
         Route::resource('aboutus', AboutusController::class);
         Route::resource('team', TeamController::class);
+        Route::resource('services-description', ServiceController::class);
     });
 });
 
@@ -84,5 +91,8 @@ Route::prefix('home')
     ->group(function () {
         // home/header/
         Route::resource('header', HomeHeadersController::class);
+        Route::resource('card', HomeCardsController::class);
+        Route::get('main/edit', [HomeMain1Controller::class, 'customEdit'])->name('brief');
+        Route::resource('main', HomeMain1Controller::class);
     });
 require __DIR__ . '/auth.php';

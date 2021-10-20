@@ -84,7 +84,7 @@
         </div>
     </div>
 </section>
-{{-- <section class="containerMixItUpProjects pb-5 contentLayerNoRight darkTheme pb-15">
+<section class="containerMixItUpProjects pb-5 contentLayerNoRight darkTheme pb-15">
  <div class="contactSectionInner90 ms-auto position-relative" data-aos="fade-up">
      <div class="containerMixItUp row mx-0">
          <div class="tab-content col-12 col-lg-6 px-lg-0 mb-15-under-md" id="nav-tabContent">
@@ -335,4 +335,4 @@
          </div>
      </div>
  </div>
-</section> --}}
+</section>

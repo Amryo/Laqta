@@ -15,12 +15,12 @@ class CreateHomeHeadersTable extends Migration
     {
         Schema::create('home_headers', function (Blueprint $table) {
             $table->id();
-            $table->string('paragraph1')->nullable();
-            $table->string('title')->nullable();  
-            $table->string('paragraph2')->nullable();  
-            $table->string('slider')->nullable();  
-            $table->string('video1')->nullable();  
-            $table->string('video2')->nullable();  
+            $table->text('paragraph1')->nullable();
+            $table->string('title')->nullable();
+            $table->text('paragraph2')->nullable();
+            $table->string('slider')->nullable();
+            $table->string('video1')->nullable();
+            $table->string('video2')->nullable();
             $table->timestamps();
         });
     }

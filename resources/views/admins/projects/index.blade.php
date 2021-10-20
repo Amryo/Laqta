@@ -111,14 +111,7 @@
                                 class="text-dark-75 font-weight-bolder text-hover-primary font-size-lg">{{$project->id}}</a>
                         </td>
                         <td>
-                            @if ($project->image != '')
-                            <span
-                                class="text-dark-75 font-weight-bolder d-block font-size-lg">{{$project->image}}</span>
-
-                            @endif
-                            <span class="symbol symbol-lg-35 symbol-25 symbol-light-success">
-                                <span class="symbol-label font-size-h5 font-weight-bold">{{$project->image}}</span>
-                            </span>
+                            <img style="height: 100px" src="{{asset('storage/'.$project->image)}}">
                         </td>
                         <td>
                             <span class="text-dark-75 font-weight-bolder d-block font-size-lg">{{$project->name}}</span>
